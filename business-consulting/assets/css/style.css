@@ -5,6 +5,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   background-image: url(../img/cool-background.png); 
+  
 }
 
 /* body::after {
@@ -628,7 +629,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
 #hero {
   width: 100%;
   height: 90vh;
-  background: url("../img/abstract-digital-grid-black-background.jpg") center center,#ffffff;
+  background: url("../img/black-background.webp") center center,#ffffff;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -1854,7 +1855,7 @@ color: #473E69;
   width: 100%;
   height: 100%;
   /* background: radial-gradient(circle, #06D6A0, #06D6A0); */
-  background-image: url(../img/abstract-digital-grid-black-background.jpg);
+  background-image: url(../img/black-background.webp);
   background-size: cover;
   border-radius: 10%;
   z-index: -1;
@@ -2273,8 +2274,9 @@ CSS code snippet to style member elements within the "industries-we-serve" class
 # Hero-Section Section
 --------------------------------------------------------------*/
 .hero-section {
-  background: linear-gradient(to right, rgba(6, 214, 160, 0.8) 0%, rgba(71, 62, 105, 0.8) 100%), url(../img/hero-bg.jpg);
+  background: linear-gradient(to right, rgba(6, 214, 160, 0.8) 0%, rgba(71, 62, 105, 0.8) 100%), url(../img/black-background.webp);
   position: relative;
+
 }
 
 .hero-section .wave {

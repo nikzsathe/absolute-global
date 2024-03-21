@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-image: url(../img/cool-background.png); 
+  background-image: url(../img/cool-background.webp); 
 }
 
 a {
@@ -616,7 +616,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
 #hero {
   width: 100%;
   height: 90vh;
-  background: url("../img/1343.jpg") center center,#ffffff;
+  background: url("../img/background.webp") center center,#ffffff;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -1674,7 +1674,7 @@ color: #473E69;
 }
 
 .about3 {
-  background: url(../img/cool-background.png) no-repeat right top;
+  background: url(../img/cool-background.webp) no-repeat right top;
 }
 
 .about3 h3 {
@@ -1842,7 +1842,7 @@ color: #473E69;
   width: 100%;
   height: 100%;
   /* background: radial-gradient(circle, #06D6A0, #06D6A0); */
-  background-image: url(../img/abstract-digital-grid-black-background.jpg);
+  background-image: url(../img/black-background.webp);
   background-size: cover;
   border-radius: 10%;
   z-index: -1;
