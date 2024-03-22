@@ -1,13 +1,10 @@
-/**
-* Template Name: Lumia - v2.1.0
+/*** Template Name: Lumia - v2.1.0
 * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
 * Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+* License: https://bootstrapmade.com/license/*/
 !(function($) {
   "use strict";
-
-  // Smooth scroll for the navigation menu and links with .scrollto classes
+// Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -20,7 +17,6 @@
         if ($(this).attr("href") == '#header') {
           scrollto = 0;
         }
-
         $('html, body').animate({
           scrollTop: scrollto
         }, 1500, 'easeInOutExpo');
@@ -29,7 +25,6 @@
           $('.nav-menu .active, .mobile-nav .active').removeClass('active');
           $(this).closest('li').addClass('active');
         }
-
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
           $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
@@ -39,8 +34,7 @@
       }
     }
   });
-
-  // Activate smooth scroll on page load with hash links in the url
+// Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
@@ -52,8 +46,7 @@
       }
     }
   });
-
-  // Mobile Navigation
+// Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
       class: 'mobile-nav d-lg-none'
@@ -87,8 +80,7 @@
   } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
-
-  // Navigation active state on scroll
+// Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
 
@@ -114,8 +106,7 @@
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
-
-  // Back to top button
+// Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -139,14 +130,12 @@
   }, {
     offset: '80%'
   });
-
-  // jQuery counterUp
+// jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
-
-  // Porfolio isotope and filter
+// Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
@@ -161,13 +150,11 @@
         filter: $(this).data('filter')
       });
     });
-
-    // Initiate venobox (lightbox feature used in portofilo)
+// Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
     });
   });
-
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
@@ -185,13 +172,11 @@
       }
     }
   });
-
-  // Portfolio details carousel
+// Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
     items: 1
   });
-
 })(jQuery);

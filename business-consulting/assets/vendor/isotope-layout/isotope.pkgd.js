@@ -41,7 +41,7 @@
 }( window, function factory( window, jQuery ) {
 'use strict';
 
-// ----- utils ----- //
+//  utils  //
 
 var arraySlice = Array.prototype.slice;
 
@@ -53,7 +53,7 @@ var logError = typeof console == 'undefined' ? function() {} :
     console.error( message );
   };
 
-// ----- jQueryBridget ----- //
+//  jQueryBridget  //
 
 function jQueryBridget( namespace, PluginClass, $ ) {
   $ = $ || jQuery || window.jQuery;
@@ -134,7 +134,7 @@ function jQueryBridget( namespace, PluginClass, $ ) {
 
 }
 
-// ----- updateJQuery ----- //
+//  updateJQuery  //
 
 // set $.bridget for v1 backwards compatibility
 function updateJQuery( $ ) {
@@ -146,7 +146,7 @@ function updateJQuery( $ ) {
 
 updateJQuery( jQuery || window.jQuery );
 
-// -----  ----- //
+//    //
 
 return jQueryBridget;
 
@@ -290,7 +290,7 @@ return EvEmitter;
 })( window, function factory() {
 'use strict';
 
-// -------------------------- helpers -------------------------- //
+// --------------------- helpers --------------------- //
 
 // get a number from a string, not a percentage
 function getStyleSize( value ) {
@@ -307,7 +307,7 @@ var logError = typeof console == 'undefined' ? noop :
     console.error( message );
   };
 
-// -------------------------- measurements -------------------------- //
+// --------------------- measurements --------------------- //
 
 var measurements = [
   'paddingLeft',
@@ -342,7 +342,7 @@ function getZeroSize() {
   return size;
 }
 
-// -------------------------- getStyle -------------------------- //
+// --------------------- getStyle --------------------- //
 
 /**
  * getStyle, get style of element, check for Firefox bug
@@ -358,7 +358,7 @@ function getStyle( elem ) {
   return style;
 }
 
-// -------------------------- setup -------------------------- //
+// --------------------- setup --------------------- //
 
 var isSetup = false;
 
@@ -376,7 +376,7 @@ function setup() {
   }
   isSetup = true;
 
-  // -------------------------- box sizing -------------------------- //
+  // --------------------- box sizing --------------------- //
 
   /**
    * Chrome & Safari measure the outer-width on style.width on border-box elems
@@ -399,7 +399,7 @@ function setup() {
   body.removeChild( div );
 }
 
-// -------------------------- getSize -------------------------- //
+// --------------------- getSize --------------------- //
 
 function getSize( elem ) {
   setup();
@@ -565,7 +565,7 @@ return getSize;
 
 var utils = {};
 
-// ----- extend ----- //
+//  extend  //
 
 // extends objects
 utils.extend = function( a, b ) {
@@ -575,13 +575,13 @@ utils.extend = function( a, b ) {
   return a;
 };
 
-// ----- modulo ----- //
+//  modulo  //
 
 utils.modulo = function( num, div ) {
   return ( ( num % div ) + div ) % div;
 };
 
-// ----- makeArray ----- //
+//  makeArray  //
 
 var arraySlice = Array.prototype.slice;
 
@@ -606,7 +606,7 @@ utils.makeArray = function( obj ) {
   return [ obj ];
 };
 
-// ----- removeFrom ----- //
+//  removeFrom  //
 
 utils.removeFrom = function( ary, obj ) {
   var index = ary.indexOf( obj );
@@ -615,7 +615,7 @@ utils.removeFrom = function( ary, obj ) {
   }
 };
 
-// ----- getParent ----- //
+//  getParent  //
 
 utils.getParent = function( elem, selector ) {
   while ( elem.parentNode && elem != document.body ) {
@@ -626,7 +626,7 @@ utils.getParent = function( elem, selector ) {
   }
 };
 
-// ----- getQueryElement ----- //
+//  getQueryElement  //
 
 // use element as selector string
 utils.getQueryElement = function( elem ) {
@@ -636,7 +636,7 @@ utils.getQueryElement = function( elem ) {
   return elem;
 };
 
-// ----- handleEvent ----- //
+//  handleEvent  //
 
 // enable .ontype to trigger from .addEventListener( elem, 'type' )
 utils.handleEvent = function( event ) {
@@ -646,7 +646,7 @@ utils.handleEvent = function( event ) {
   }
 };
 
-// ----- filterFindElements ----- //
+//  filterFindElements  //
 
 utils.filterFindElements = function( elems, selector ) {
   // make array of elems
@@ -679,7 +679,7 @@ utils.filterFindElements = function( elems, selector ) {
   return ffElems;
 };
 
-// ----- debounceMethod ----- //
+//  debounceMethod  //
 
 utils.debounceMethod = function( _class, methodName, threshold ) {
   threshold = threshold || 100;
@@ -700,7 +700,7 @@ utils.debounceMethod = function( _class, methodName, threshold ) {
   };
 };
 
-// ----- docReady ----- //
+//  docReady  //
 
 utils.docReady = function( callback ) {
   var readyState = document.readyState;
@@ -712,7 +712,7 @@ utils.docReady = function( callback ) {
   }
 };
 
-// ----- htmlInit ----- //
+//  htmlInit  //
 
 // http://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
 utils.toDashed = function( str ) {
@@ -763,7 +763,7 @@ utils.htmlInit = function( WidgetClass, namespace ) {
   });
 };
 
-// -----  ----- //
+//    //
 
 return utils;
 
@@ -802,7 +802,7 @@ return utils;
 }( window, function factory( EvEmitter, getSize ) {
 'use strict';
 
-// ----- helpers ----- //
+//  helpers  //
 
 function isEmptyObj( obj ) {
   for ( var prop in obj ) {
@@ -812,7 +812,7 @@ function isEmptyObj( obj ) {
   return true;
 }
 
-// -------------------------- CSS3 support -------------------------- //
+// --------------------- CSS3 support --------------------- //
 
 
 var docElemStyle = document.documentElement.style;
@@ -836,7 +836,7 @@ var vendorProperties = {
   transitionDelay: transitionProperty + 'Delay'
 };
 
-// -------------------------- Item -------------------------- //
+// --------------------- Item --------------------- //
 
 function Item( element, layout ) {
   if ( !element ) {
@@ -1023,7 +1023,7 @@ proto.setPosition = function( x, y ) {
   this.position.y = parseFloat( y );
 };
 
-// ----- transition ----- //
+//  transition  //
 
 /**
  * @param {Object} style - CSS
@@ -1126,7 +1126,7 @@ proto.enableTransition = function(/* style */) {
   this.element.addEventListener( transitionEndEvent, this, false );
 };
 
-// ----- events ----- //
+//  events  //
 
 proto.onwebkitTransitionEnd = function( event ) {
   this.ontransitionend( event );
@@ -1203,14 +1203,14 @@ proto.removeTransitionStyles = function() {
   this.css( cleanTransitionStyle );
 };
 
-// ----- stagger ----- //
+//  stagger  //
 
 proto.stagger = function( delay ) {
   delay = isNaN( delay ) ? 0 : delay;
   this.staggerDelay = delay + 'ms';
 };
 
-// ----- show/hide/remove ----- //
+//  show/hide/remove  //
 
 // remove element from DOM
 proto.removeElem = function() {
@@ -1369,13 +1369,13 @@ return Item;
 }( window, function factory( window, EvEmitter, getSize, utils, Item ) {
 'use strict';
 
-// ----- vars ----- //
+//  vars  //
 
 var console = window.console;
 var jQuery = window.jQuery;
 var noop = function() {};
 
-// -------------------------- Outlayer -------------------------- //
+// --------------------- Outlayer --------------------- //
 
 // globally unique identifiers
 var GUID = 0;
@@ -1542,7 +1542,7 @@ proto.getItemElements = function() {
   });
 };
 
-// ----- init & layout ----- //
+//  init & layout  //
 
 /**
  * lays out all items
@@ -1815,7 +1815,7 @@ proto.dispatchEvent = function( type, event, args ) {
   }
 };
 
-// -------------------------- ignore & stamps -------------------------- //
+// --------------------- ignore & stamps --------------------- //
 
 
 /**
@@ -1936,7 +1936,7 @@ proto._getElementOffset = function( elem ) {
   return offset;
 };
 
-// -------------------------- resize -------------------------- //
+// --------------------- resize --------------------- //
 
 // enable event handlers for listeners
 // i.e. resize -> onresize
@@ -1986,7 +1986,7 @@ proto.needsResizeLayout = function() {
   return hasSizes && size.innerWidth !== this.size.innerWidth;
 };
 
-// -------------------------- methods -------------------------- //
+// --------------------- methods --------------------- //
 
 /**
  * add items to Outlayer instance
@@ -2144,7 +2144,7 @@ proto.remove = function( elems ) {
   }, this );
 };
 
-// ----- destroy ----- //
+//  destroy  //
 
 // remove and disable Outlayer instance
 proto.destroy = function() {
@@ -2170,7 +2170,7 @@ proto.destroy = function() {
 
 };
 
-// -------------------------- data -------------------------- //
+// --------------------- data --------------------- //
 
 /**
  * get Outlayer instance from element
@@ -2184,7 +2184,7 @@ Outlayer.data = function( elem ) {
 };
 
 
-// -------------------------- create Outlayer class -------------------------- //
+// --------------------- create Outlayer class --------------------- //
 
 /**
  * create a layout class
@@ -2205,11 +2205,11 @@ Outlayer.create = function( namespace, options ) {
   // sub-class Item
   Layout.Item = subclass( Item );
 
-  // -------------------------- declarative -------------------------- //
+  // --------------------- declarative --------------------- //
 
   utils.htmlInit( Layout, namespace );
 
-  // -------------------------- jQuery bridge -------------------------- //
+  // --------------------- jQuery bridge --------------------- //
 
   // make into jQuery plugin
   if ( jQuery && jQuery.bridget ) {
@@ -2230,7 +2230,7 @@ function subclass( Parent ) {
   return SubClass;
 }
 
-// ----- helpers ----- //
+//  helpers  //
 
 // how many milliseconds are in each unit
 var msUnits = {
@@ -2255,7 +2255,7 @@ function getMilliseconds( time ) {
   return num * mult;
 }
 
-// ----- fin ----- //
+//  fin  //
 
 // back in global
 Outlayer.Item = Item;
@@ -2293,7 +2293,7 @@ return Outlayer;
 }( window, function factory( Outlayer ) {
 'use strict';
 
-// -------------------------- Item -------------------------- //
+// --------------------- Item --------------------- //
 
 // sub-class Outlayer Item
 function Item() {
@@ -2408,7 +2408,7 @@ return Item;
     };
   });
 
-  // -----  ----- //
+  //    //
 
   // for horizontal layout modes, check vertical size
   proto.needsVerticalResizeLayout = function() {
@@ -2420,7 +2420,7 @@ return Item;
     return hasSizes && size.innerHeight != this.isotope.size.innerHeight;
   };
 
-  // ----- measurements ----- //
+  //  measurements  //
 
   proto._getMeasurement = function() {
     this.isotope._getMeasurement.apply( this, arguments );
@@ -2460,7 +2460,7 @@ return Item;
     return firstItem && firstItem.element && getSize( firstItem.element );
   };
 
-  // ----- methods that should reference isotope ----- //
+  //  methods that should reference isotope  //
 
   proto.layout = function() {
     this.isotope.layout.apply( this.isotope, arguments );
@@ -2471,7 +2471,7 @@ return Item;
     this.size = this.isotope.size;
   };
 
-  // -------------------------- create -------------------------- //
+  // --------------------- create --------------------- //
 
   LayoutMode.modes = {};
 

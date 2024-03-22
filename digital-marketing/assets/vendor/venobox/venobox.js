@@ -319,14 +319,14 @@
                         option.cb_post_open(obj, gallIndex, thenext, theprev);
                     });
 
-                    /* -------- KEYBOARD ACTIONS -------- */
+                    /* --- KEYBOARD ACTIONS --- */
                     $('body').keydown(keyboardHandler);
 
-                    /* -------- PREVGALL -------- */
+                    /* --- PREVGALL --- */
                     $('.vbox-prev').on('click', function(){
                         navigateGall(theprev);
                     });
-                    /* -------- NEXTGALL -------- */
+                    /* --- NEXTGALL --- */
                     $('.vbox-next').on('click', function(){
                         navigateGall(thenext);
                     });
@@ -335,7 +335,7 @@
 
                 }); // click
 
-                /* -------- CHECK NEXT / PREV -------- */
+                /* --- CHECK NEXT / PREV --- */
                 function checknav(){
 
                     thisgall = obj.data('gall');
@@ -419,7 +419,7 @@
                     }
                 }
 
-                /* -------- gallery navigation -------- */
+                /* --- gallery navigation --- */
                 function navigateGall(destination) {
 
                     if (destination.length < 1) {
@@ -483,7 +483,7 @@
                     });
                 }
 
-                /* -------- KEYBOARD HANDLER -------- */
+                /* --- KEYBOARD HANDLER --- */
                 function keyboardHandler(e) {
                     if (e.keyCode === 27) { // esc
                       closeVbox();
@@ -498,7 +498,7 @@
                     }
                 }
 
-                /* -------- CLOSE VBOX -------- */
+                /* --- CLOSE VBOX --- */
                 function closeVbox(){
 
                     var cb_pre_close = option.cb_pre_close(obj, gallIndex, thenext, theprev);
@@ -518,7 +518,7 @@
                     });
                 }
 
-                /* -------- CLOSE CLICK -------- */
+                /* --- CLOSE CLICK --- */
                 var closeclickclass = '.vbox-overlay';
                 if(!option.overlayClose){
                     closeclickclass = '.vbox-close'; // close only on X
@@ -655,7 +655,7 @@
                     $(document).on("mousemove", onMouseEvent);
                 }
 
-                /* -------- LOAD AJAX -------- */
+                /* --- LOAD AJAX --- */
                 function loadAjax(){
                   $.ajax({
                   url: dest,
@@ -670,7 +670,7 @@
                   });
                 }
 
-                /* -------- LOAD IFRAME -------- */
+                /* --- LOAD IFRAME --- */
                 function loadIframe(){
                     content.html('<iframe class="venoframe" src="'+dest+'"></iframe>');
                   //  $('.venoframe').load(function(){ // valid only for iFrames in same domain
@@ -678,7 +678,7 @@
                   //  });
                 }
 
-                /* -------- LOAD VIDEOs -------- */
+                /* --- LOAD VIDEOs --- */
                 function loadVid(autoplay){
 
                     var player;
@@ -734,13 +734,13 @@
                   return encodeURI(result);
                 }
 
-                /* -------- LOAD INLINE -------- */
+                /* --- LOAD INLINE --- */
                 function loadInline(){
                     content.html('<div class="vbox-inline">'+$(dest).html()+'</div>');
                     updateoverlay();
                 }
 
-                /* -------- PRELOAD IMAGE -------- */
+                /* --- PRELOAD IMAGE --- */
                 function preloadFirst(){
                     images = content.find('img');
 
@@ -755,7 +755,7 @@
                     }
                 }
 
-                /* -------- FADE-IN THE NEW CONTENT -------- */
+                /* --- FADE-IN THE NEW CONTENT --- */
                 function updateoverlay(){
 
                     blocktitle.html(title);
@@ -784,7 +784,7 @@
                     option.cb_content_loaded(obj, gallIndex, thenext, theprev);
                 }
 
-                /* -------- CENTER FRAME -------- */
+                /* --- CENTER FRAME --- */
                 function updateOL(){
 
                     var sonH = content.outerHeight();

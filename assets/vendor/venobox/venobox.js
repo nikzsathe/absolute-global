@@ -1,15 +1,10 @@
-/*
- * VenoBox - jQuery Plugin
+/** VenoBox - jQuery Plugin
  * version: 1.9.0
  * @requires jQuery >= 1.7.0
- *
  * Examples at http://veno.es/venobox/
  * License: MIT License
  * License URI: https://github.com/nicolafranchini/VenoBox/blob/master/LICENSE
- * Copyright 2013-2020 Nicola Franchini - @nicolafranchini
- *
- */
-
+ * Copyright 2013-2020 Nicola Franchini - @nicolafranchini**/
 /* global jQuery */
 
 (function($){
@@ -27,10 +22,10 @@
     var downloadIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 9h-4v-1h4v1zm0-3v1h-4v-1h4zm-2 13l-6-6h4v-3h4v3h4l-6 6z"/></svg>';
    
     $.fn.extend({
-        //plugin name - venobox
+//plugin name - venobox
         venobox: function(options) {
             var plugin = this;
-            // default options
+ // default options
             var defaults = {
                 arrowsColor : '#B6B6B6',
                 autoplay : false, // same as data-autoplay - thanks @codibit
@@ -76,12 +71,10 @@
             return this.each(function() {
 
                 obj = $(this);
-
-                // Prevent double initialization - thanx @matthistuff
+// Prevent double initialization - thanx @matthistuff
                 if (obj.data('venobox')) {
                   return true;
                 }
-
                 // method to be used outside the plugin
                 plugin.VBclose = function() {
                     closeVbox();
@@ -111,7 +104,6 @@
                     if (cb_pre_open === false) {
                       return false;
                     }
-
                     // methods to be used outside the plugin
                     plugin.VBnext = function() {
                         navigateGall(thenext);
@@ -300,8 +292,7 @@
                     overlay.css('opacity', '0');
 
                     checknav();
-
-                    // fade in overlay
+// fade in overlay
                     overlay.animate({opacity:1}, 250, function(){
 
                         if (obj.data('vbtype') == 'iframe') {
@@ -318,15 +309,13 @@
                         }
                         option.cb_post_open(obj, gallIndex, thenext, theprev);
                     });
-
-                    /* -------- KEYBOARD ACTIONS -------- */
+/* --- KEYBOARD ACTIONS --- */
                     $('body').keydown(keyboardHandler);
-
-                    /* -------- PREVGALL -------- */
+/* --- PREVGALL --- */
                     $('.vbox-prev').on('click', function(){
                         navigateGall(theprev);
                     });
-                    /* -------- NEXTGALL -------- */
+/* --- NEXTGALL --- */
                     $('.vbox-next').on('click', function(){
                         navigateGall(thenext);
                     });
@@ -334,8 +323,7 @@
                     return false;
 
                 }); // click
-
-                /* -------- CHECK NEXT / PREV -------- */
+/* --- CHECK NEXT / PREV --- */
                 function checknav(){
 
                     thisgall = obj.data('gall');
@@ -374,8 +362,7 @@
                     if (!thenext.length && infinigall === true) {
                       thenext = items.eq(0);
                     }
-
-                    // update gall numeration
+// update gall numeration
                     if (items.length >= 1) {
                       gallIndex = items.index(obj)+1;
                       blocknum.html(gallIndex + ' / ' + items.length);
@@ -387,15 +374,13 @@
                     } else {
                       blocknum.hide();
                     }
-
-                    // update title
+// update title
                     if (title !== '') {
                       blocktitle.show();
                     } else {
                       blocktitle.hide();
                     }
-
-                    // update navigation arrows
+// update navigation arrows
                     if (!thenext.length && infinigall !== true) {
                       $('.vbox-next').css('display', 'none');
                       nextok = false;
@@ -418,8 +403,7 @@
                       content.on(TouchMouseEvent.UP, onUpEvent);
                     }
                 }
-
-                /* -------- gallery navigation -------- */
+/* --- gallery navigation --- */
                 function navigateGall(destination) {
 
                     if (destination.length < 1) {
@@ -482,8 +466,7 @@
                         option.cb_after_nav(obj, gallIndex, thenext, theprev);
                     });
                 }
-
-                /* -------- KEYBOARD HANDLER -------- */
+/* --- KEYBOARD HANDLER --- */
                 function keyboardHandler(e) {
                     if (e.keyCode === 27) { // esc
                       closeVbox();
@@ -497,8 +480,7 @@
                       navigateGall(thenext);
                     }
                 }
-
-                /* -------- CLOSE VBOX -------- */
+/* --- CLOSE VBOX --- */
                 function closeVbox(){
 
                     var cb_pre_close = option.cb_pre_close(obj, gallIndex, thenext, theprev);
@@ -517,8 +499,7 @@
                       option.cb_post_close();
                     });
                 }
-
-                /* -------- CLOSE CLICK -------- */
+/* --- CLOSE CLICK --- */
                 var closeclickclass = '.vbox-overlay';
                 if(!option.overlayClose){
                     closeclickclass = '.vbox-close'; // close only on X
@@ -590,15 +571,13 @@
                         }
                     }
                 }
-
-                /* == GLOBAL DECLERATIONS == */
+/* == GLOBAL DECLERATIONS == */
                 var TouchMouseEvent = {
                     DOWN: "touchmousedown",
                     UP: "touchmouseup",
                     MOVE: "touchmousemove"
                 };
-
-                /* == EVENT LISTENERS == */
+/* == EVENT LISTENERS == */
                 var onMouseEvent = function(event) {
                     var type;
                     switch (event.type) {
@@ -642,8 +621,7 @@
                         originalEvent: original
                     });
                 };
-
-                /* == LISTEN TO ORIGINAL EVENT == */
+/* == LISTEN TO ORIGINAL EVENT == */
                 if ("ontouchstart" in window) {
                     $(document).on("touchstart", onTouchEvent);
                     $(document).on("touchmove", onTouchEvent);
@@ -654,8 +632,7 @@
                     $(document).on("mouseout", onMouseEvent);
                     $(document).on("mousemove", onMouseEvent);
                 }
-
-                /* -------- LOAD AJAX -------- */
+/* --- LOAD AJAX --- */
                 function loadAjax(){
                   $.ajax({
                   url: dest,
@@ -669,22 +646,19 @@
                       updateoverlay();
                   });
                 }
-
-                /* -------- LOAD IFRAME -------- */
+/* --- LOAD IFRAME --- */
                 function loadIframe(){
                     content.html('<iframe class="venoframe" src="'+dest+'"></iframe>');
                   //  $('.venoframe').load(function(){ // valid only for iFrames in same domain
                     updateoverlay();
                   //  });
                 }
-
-                /* -------- LOAD VIDEOs -------- */
+/* --- LOAD VIDEOs --- */
                 function loadVid(autoplay){
 
                     var player;
                     var videoObj = parseVideo(dest);
-
-                    // set rel=0 to hide related videos at the end of YT + optional autoplay
+// set rel=0 to hide related videos at the end of YT + optional autoplay
                     var stringAutoplay = autoplay ? "?rel=0&autoplay=1" : "?rel=0";
                     var queryvars = stringAutoplay + getUrlParameter(dest);
 
@@ -696,10 +670,7 @@
                     content.html('<iframe class="venoframe vbvid" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay" frameborder="0" src="'+player+videoObj.id+queryvars+'"></iframe>');
                     updateoverlay();
                 }
-
-                /**
-                * Parse Youtube or Vimeo videos and get host & ID
-                */
+ /*** Parse Youtube or Vimeo videos and get host & ID*/
                 function parseVideo (url) {
                     url.match(/(http:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
                     var type;
@@ -713,10 +684,7 @@
                         id: RegExp.$6
                     };
                 }
-
-                /**
-                * get additional video url parameters
-                */
+ /*** get additional video url parameters*/
                 function getUrlParameter(name) {
                   var result = '';
                   var sPageURL = decodeURIComponent(name);
@@ -733,14 +701,12 @@
                   }
                   return encodeURI(result);
                 }
-
-                /* -------- LOAD INLINE -------- */
+/* --- LOAD INLINE --- */
                 function loadInline(){
                     content.html('<div class="vbox-inline">'+$(dest).html()+'</div>');
                     updateoverlay();
                 }
-
-                /* -------- PRELOAD IMAGE -------- */
+/* --- PRELOAD IMAGE --- */
                 function preloadFirst(){
                     images = content.find('img');
 
@@ -754,8 +720,7 @@
                         updateoverlay();
                     }
                 }
-
-                /* -------- FADE-IN THE NEW CONTENT -------- */
+/* --- FADE-IN THE NEW CONTENT --- */
                 function updateoverlay(){
 
                     blocktitle.html(title);
@@ -769,8 +734,7 @@
                     $('img.vbox-figlio').on('dragstart', function(event) {
                         event.preventDefault();
                     });
-
-                    // reset content scroll
+// reset content scroll
                     container.scrollTop(0);
 
                     updateOL();
@@ -783,8 +747,7 @@
 
                     option.cb_content_loaded(obj, gallIndex, thenext, theprev);
                 }
-
-                /* -------- CENTER FRAME -------- */
+/* --- CENTER FRAME --- */
                 function updateOL(){
 
                     var sonH = content.outerHeight();

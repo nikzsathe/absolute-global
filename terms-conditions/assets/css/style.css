@@ -1,13 +1,8 @@
-/**
-* Template Name: Lumia - v2.1.0
+/*** Template Name: Lumia - v2.1.0
 * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
 * Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+* License: https://bootstrapmade.com/license/*/
+/*# General */
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -26,9 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/*# Back to top button */
 .back-to-top {
   position: fixed;
   display: none;
@@ -54,10 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #57aae1;
   color: #fff;
 }
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*# Header */
 #header {
   height: 70px;
   transition: all 0.5s;
@@ -84,10 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo img {
   max-height: 40px;
 }
-
-/*--------------------------------------------------------------
-# Header Social Links
---------------------------------------------------------------*/
+/*# Header Social Links */
 .header-social-links a {
   color: #9ba6af;
   padding-left: 8px;
@@ -108,10 +95,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 6px;
   }
 }
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/*# Navigation Menu */
 /* Desktop Navigation */
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -325,9 +309,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/*# Hero Section */
 #hero {
   width: 100%;
   height: 60vh;
@@ -406,9 +388,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*# Sections General */
 section {
   padding: 60px 0;
 }
@@ -455,10 +435,7 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
-
-/*--------------------------------------------------------------
-# What We Do
---------------------------------------------------------------*/
+/*# What We Do */
 .what-we-do .icon-box {
   text-align: center;
   padding: 30px 20px;
@@ -510,9 +487,7 @@ section {
   color: #3498db;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+   /*# About */
 .about {
   padding: 10px 0;
 }
@@ -565,9 +540,7 @@ section {
   color: #848484;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+   /*# Skills */
 .skills .progress {
   height: 50px;
   display: block;
@@ -599,10 +572,7 @@ section {
   transition: .9s;
   background-color: #5faee3;
 }
-
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
+/*# Counts */
 .counts {
   background: white;
   padding: 30px 0 40px 0;
@@ -641,10 +611,7 @@ section {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+/*# Services */
 .services .icon-box {
   padding: 30px;
   border-radius: 6px;
@@ -683,10 +650,7 @@ section {
 .services .icon-box:hover h4 a {
   color: #3498db;
 }
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+/*# Portfolio */
 .portfolio {
   padding: 60px 0;
 }
@@ -834,9 +798,7 @@ section {
   text-transform: uppercase;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
+   /*# Testimonials */
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 0 30px;
@@ -913,10 +875,7 @@ section {
     margin: 30px 10px;
   }
 }
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
+/*# Team */
 .team .member {
   text-align: center;
   margin-bottom: 20px;
@@ -968,9 +927,7 @@ section {
   margin: 0 2px;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+   /*# Contact */
 .contact .info-wrap {
   padding: 30px;
   background: #fff;
@@ -1117,9 +1074,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/*# Breadcrumbs */
 .breadcrumbs {
   padding: 40px 0;
   margin-top: 70px;
@@ -1162,9 +1117,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+/*# Portfolio Details */
 .portfolio-details {
   padding-top: 0;
 }
@@ -1249,9 +1202,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*# Footer */
 #footer {
   color: #444444;
   font-size: 14px;

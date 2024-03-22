@@ -1,6 +1,4 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/*# General */
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -18,12 +16,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
-/*--------------------------------------------------------------
-# loader
---------------------------------------------------------------*/
-
-
+/*# loader */
 .loader {
   --dim: 3rem;
   width: var(--dim);
@@ -84,9 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/*# Breadcrumbs */
 .breadcrumbs {
   padding: 40px 0;
   margin-top: 70px;
@@ -128,10 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
   }
 }
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*# Sections General */
 section {
   padding: 60px 0;
 }
@@ -181,10 +169,7 @@ section {
   font-size: medium;
 }
 
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/*# Back to top button */
 .back-to-top {
   position: fixed;
   display: none;
@@ -211,9 +196,7 @@ section {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*# Header */
 #header {
   display: flex;
   align-items: center;
@@ -228,8 +211,7 @@ section {
 
 #header .logo img {
   max-height: 40px;
-  float: left;
-  
+  float: left; 
 }
 
 @media (max-width: 768px) {
@@ -238,9 +220,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Header Social Links
---------------------------------------------------------------*/
+/*# Header Social Links */
 .header-social-links {
   position: relative;
 }
@@ -261,18 +241,14 @@ section {
 @media (max-width: 768px) {
   .header-social-links {
     padding-right: 40px;
-    
-     /* Adjust this value */
+/* Adjust this value */
   }
   .header-social-links a {
     padding-left: 0px; 
    /* Adjust this value */
   }
 }
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/*# Navigation Menu */
 /* Desktop Navigation */
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -354,7 +330,6 @@ section {
     letter-spacing: 0.05em;
     color: #070c10;
   }
-
 }
 
 .nav-menu .linkh {
@@ -479,11 +454,8 @@ section {
 }
 
 /* Mobile Navigation */
-/* 
-Code Explanation:
-The code snippet defines the styles for a mobile navigation menu. It includes styles for the toggle button, the menu itself, and the dropdown submenus.
-*/
-
+/* Code Explanation:
+The code snippet defines the styles for a mobile navigation menu. It includes styles for the toggle button, the menu itself, and the dropdown submenus.*/
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -590,9 +562,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/*# Hero Section */
 #hero {
   width: 100%;
   height: 90vh;
@@ -619,7 +589,6 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   z-index: 1; /* Set a higher z-index to position the text in front of the video */
   color: #fff; /* Adjust text color as needed */
 }
-
 
 #hero:before {
   content: "";
@@ -689,22 +658,18 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   }
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+   /*# About */
 .about {
   position: relative;
   width: 100%;
   height: auto;
   padding: 10px 0;
-  
 }
 
 .about h3 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-size: 20px;
-
 }
 
 .about h2 {
@@ -800,16 +765,12 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   }
 }
 
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
+/*# Clients */
 .clients {
   background: #fff;
   padding: 10px 0;
   text-align: center;
 }
-
 
 .clients .col-lg-2 {
   display: flex;
@@ -877,10 +838,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   }
 }
 
-/*--------------------------------------------------------------
-# What We Do
---------------------------------------------------------------*/
-
+/*# What We Do */
 .what-we-do .btn-get-started {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -899,8 +857,6 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   background: #4859A3;
 }
 
-
-
 .what-we-do .zoom-container {
   overflow: hidden;
 }
@@ -916,9 +872,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   transform: rotateY(360deg);
 }
 
-/*--------------------------------------------------------------
-# What we do 2 Section
---------------------------------------------------------------*/
+/*# What we do 2 Section */
 .what-we-do2 .first-row .featured-col .featured-box {
   padding: 15px 15px;
   border-left: 1px solid #000;
@@ -963,10 +917,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   border-radius: 0px;
 }
 
-/*--------------------------------------------------------------
-# Why partner Section
---------------------------------------------------------------*/
-
+/*# Why partner Section */
 .why-partner {
   position: relative;
   width: 100%;
@@ -993,20 +944,18 @@ position: relative;
 color: #473E69;
 }
 .why-partner h5 {
-  /* Font styles */
+/* Font styles */
   font-family: 'Helvetica', sans-serif;
   font-size: 2em; /* Adjust the font size as needed */
   font-weight: bold;
 
   /* Text color */
   color: #473E69; /* Adjust the color as needed */
-
-  /* Margin and padding for spacing */
+/* Margin and padding for spacing */
   margin-top: 10px;
   margin-bottom: 10px;
-
-  /* Other styles */
-  /* Add any other styles you want, such as text decoration, letter spacing, etc. */
+/* Other styles */
+/* Add any other styles you want, such as text decoration, letter spacing, etc. */
 }
 
 .why-partner p {
@@ -1015,22 +964,17 @@ color: #473E69;
   font-size: 1em; /* Adjust the font size as needed */
   line-height: 1.5; /* Adjust the line height for better readability */
   font-weight: normal;
-
-  /* Text color */
+/* Text color */
   color: #666; /* Adjust the color as needed */
 
   /* Margin and padding for spacing */
   margin-top: 10px;
   margin-bottom: 10px;
-
   /* Other styles */
   /* Add any other styles you want, such as text decoration, letter spacing, etc. */
 }
 
-/*--------------------------------------------------------------
-# Map Section
---------------------------------------------------------------*/
-
+/*# Map Section*/
 .ag-canvas {
   display: flex;
   align-items: center;
@@ -1191,10 +1135,7 @@ color: #473E69;
   fill: #06D6A0;
 }
 
-/*--------------------------------------------------------------
-# Analytics and Automation Section
---------------------------------------------------------------*/
-
+/*# Analytics and Automation Section */
 .analytics-and-automation-box img {
   width: 100%;
   filter: grayscale(100);
@@ -1208,11 +1149,7 @@ color: #473E69;
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-
-
+/*# Contact */
 .contact {
   background: #FFF;
 }
@@ -1245,7 +1182,6 @@ color: #473E69;
   color: #070809;
 }
 
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1264,10 +1200,7 @@ color: #473E69;
   }
 }
 
-/*--------------------------------------------------------------
-# Cookies
---------------------------------------------------------------*/
-
+/*# Cookies */
 :root {
 	--background: #06D6A0;
 	--white-text: #fff;
@@ -1275,7 +1208,6 @@ color: #473E69;
 	--button-background: #fff;
 	--button-background-hover: #000;
 	--button-text: #007af7;
-	
 }
 
 .cookie-container {
@@ -1328,12 +1260,10 @@ color: #473E69;
 
 .agree button:hover {
 	background: var(--button-background-hover);
-		color: var(--white-text);
+	color: var(--white-text);
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*# Footer */
 #footer {
   color: #444444;
   font-size: 14px;
@@ -1456,12 +1386,8 @@ color: #473E69;
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# RPA Page
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Hero 1 Section
---------------------------------------------------------------*/
+/*# RPA Page */
+/*# Hero 1 Section */
 #hero1 {
   width: 100%;
   height: 60vh;
@@ -1472,7 +1398,6 @@ color: #473E69;
   padding: 0;
 }
 
-
 #hero1 .text-overlay {
   position: absolute;
   top: 50%;
@@ -1481,7 +1406,6 @@ color: #473E69;
   z-index: 1; /* Set a higher z-index to position the text in front of the video */
   color: #fff; /* Adjust text color as needed */
 }
-
 
 #hero1:before {
   content: "";
@@ -1514,8 +1438,6 @@ color: #473E69;
   margin-bottom: 30px;
   font-size: 24px;
 }
-
-
 
 #hero1 .btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -1553,9 +1475,7 @@ color: #473E69;
   }
 }
 
-/*--------------------------------------------------------------
-# About 2
---------------------------------------------------------------*/
+/*# About 2 */
 .about2 {
   position: relative;
   width: 100%;
@@ -1574,9 +1494,7 @@ color: #473E69;
   font-size: 32px;
 }
 
-/*--------------------------------------------------------------
-# About 3
---------------------------------------------------------------*/
+/*# About 3 */
 .about3 {
   position: relative;
   width: 100%;
@@ -1598,7 +1516,6 @@ color: #473E69;
   font-size: 32px;
 }
 
-
 .about3 .icon-boxes {
   padding-top: 10px;
 }
@@ -1615,8 +1532,6 @@ color: #473E69;
   font-size: 30px; /* Change font size to 20 pixels as an example */
   /* Add any other styles you want to modify */
 }
-
-
 
 .about3 .icon-boxes p {
   font-size: 15px;
@@ -1641,7 +1556,6 @@ color: #473E69;
   }
 }
 
-
 @media (max-width: 768px) {
   .about3 img {
     width: 100%; /* Make the video fill the entire width on screens up to 768px */
@@ -1649,9 +1563,7 @@ color: #473E69;
   }
 }
 
-/*--------------------------------------------------------------
-# What We Offer-RPA
---------------------------------------------------------------*/
+/*# What We Offer-RPA */
 .what-we-offer .icon-box {
   text-align: center;
   border-radius: 27px;
@@ -1716,9 +1628,7 @@ color: #473E69;
   color: #06D6A0;
 }
 
-/*--------------------------------------------------------------
-# Key Features-RPA
---------------------------------------------------------------*/
+/*# Key Features-RPA */
 #key {
   position: relative;
   overflow: hidden;
@@ -1733,7 +1643,6 @@ color: #473E69;
   margin: 0 auto;
   animation: moveUpDown 4s infinite alternate; /* 4s duration, infinite loop, alternate direction */
 }
-
 
 .key-image button {
   margin: 0 auto; /* or text-align: center; */
@@ -1844,13 +1753,8 @@ color: #473E69;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/*--------------------------------------------------------------
-# Industries Serves
---------------------------------------------------------------*/
-/* 
-CSS code snippet to style member elements within the "industries-we-serve" class.
-*/
-
+/*# Industries Serves */
+/* CSS code snippet to style member elements within the "industries-we-serve" class.*/
 .industries-we-serve .member {
   text-align: center;
   margin-bottom: 20px;
@@ -1858,7 +1762,6 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   padding: 30px 20px;
   background: #fff;
 }
-
 
 .industries-we-serve .member img {
   max-width: 100%;
@@ -1891,7 +1794,6 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   width: 100%;
 }
 
-
 .industries-we-serve .member span {
   font-style: italic;
   display: block;
@@ -1923,16 +1825,13 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   margin: 0 2px;
 }
 
-/*--------------------------------------------------------------
-# FAQ
---------------------------------------------------------------*/
-
+/*# FAQ */
 .section-faq {
   display:flex;
   align-items: center;
 	font-family: "Roboto", sans-serif;
 	padding-top: 80px;
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .section-faq h1,h2,h3,h4,h5,h6,a {
@@ -1979,7 +1878,6 @@ CSS code snippet to style member elements within the "industries-we-serve" class
 .section-faq .questions .single-question {
 	margin-bottom: 20px;
 }
-
 /* Pushing the image to the right */
 .section-faq .faq-image {
   margin-left: auto;
@@ -1992,13 +1890,12 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   height: auto;
 }
 
-
 .section-faq .questions .single-question > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 	padding: 11px 20px;
 	cursor: pointer;
 	transition: all .3s;
@@ -2030,12 +1927,8 @@ CSS code snippet to style member elements within the "industries-we-serve" class
     opacity: 0.7;
     display: none;
 }
-
-
 @media(max-width: 991.9px) {
 	.section-faq .questions {
 	    margin-bottom: 60px;
 	}
 }
-
-

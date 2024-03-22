@@ -1,7 +1,4 @@
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+   /*# General */
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -20,9 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/*# Back to top button */
 .back-to-top {
   position: fixed;
   display: none;
@@ -49,9 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*# Header */
 #header {
   height: 70px;
   transition: all 0.5s;
@@ -79,9 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# Header Social Links
---------------------------------------------------------------*/
+/*# Header Social Links */
 .header-social-links a {
   color: #9ba6af;
   padding-left: 8px;
@@ -103,9 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/*# Navigation Menu */
 /* Desktop Navigation */
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -319,9 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/*# Hero Section */
 #hero {
   width: 100%;
   height: 60vh;
@@ -400,9 +387,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*# Sections General */
 section {
   padding: 60px 0;
 }
@@ -450,9 +435,7 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# What We Do
---------------------------------------------------------------*/
+/*# What We Do */
 .what-we-do .icon-box {
   text-align: center;
   padding: 30px 20px;
@@ -504,9 +487,7 @@ section {
   color: #3498db;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/*# About */
 .about {
   padding: 10px 0;
 }
@@ -559,9 +540,7 @@ section {
   color: #848484;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+/*# Skills */
 .skills .progress {
   height: 50px;
   display: block;
@@ -594,9 +573,7 @@ section {
   background-color: #5faee3;
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
+/*# Counts */
 .counts {
   background: white;
   padding: 30px 0 40px 0;
@@ -636,9 +613,7 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+/*# Services */
 .services .icon-box {
   padding: 30px;
   border-radius: 6px;
@@ -678,9 +653,7 @@ section {
   color: #3498db;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+/*# Portfolio */
 .portfolio {
   padding: 60px 0;
 }
@@ -828,9 +801,7 @@ section {
   text-transform: uppercase;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
+/*# Testimonials */
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 0 30px;
@@ -908,9 +879,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
+/*# Team */
 .team .member {
   text-align: center;
   margin-bottom: 20px;
@@ -962,9 +931,7 @@ section {
   margin: 0 2px;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/*# Contact */
 .contact .info-wrap {
   padding: 30px;
   background: #fff;
@@ -1111,9 +1078,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/*# Breadcrumbs */
 .breadcrumbs {
   padding: 40px 0;
   margin-top: 70px;
@@ -1155,10 +1120,7 @@ section {
     display: inline-block;
   }
 }
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+/*# Portfolio Details */
 .portfolio-details {
   padding-top: 0;
 }
@@ -1243,9 +1205,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*# Footer */
 #footer {
   color: #444444;
   font-size: 14px;
@@ -1399,8 +1359,6 @@ section {
   text-decoration: none;
 }
 
-
-
 .portfolio-details .output {
   text-align:center;
   font-family: 'Source Code Pro', monospace;
@@ -1411,7 +1369,6 @@ section {
 }
 
 /* Cursor Styling */
-
 .portfolio-details .cursor::after {
   content:'';
   display:inline-block;
@@ -1455,8 +1412,3 @@ div.ambition img {
     max-width: 100%; /* Ensure the image doesn't exceed container width */
     height: auto; /* Maintain aspect ratio */
 }
-
-
-
-
-

@@ -84,16 +84,12 @@
   }
 
   /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v4.5.0): util.js
+   * -------    * Bootstrap (v4.5.0): util.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+   * -------    */
   /**
-   * ------------------------------------------------------------------------
-   * Private TransitionEnd Helpers
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Private TransitionEnd Helpers
+   * -----    */
 
   var TRANSITION_END = 'transitionend';
   var MAX_UID = 1000000;
@@ -141,10 +137,8 @@
     $.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
   }
   /**
-   * --------------------------------------------------------------------------
-   * Public Util Api
-   * --------------------------------------------------------------------------
-   */
+   * -------    * Public Util Api
+   * -------    */
 
 
   var Util = {
@@ -260,10 +254,8 @@
   setTransitionEndSupport();
 
   /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Constants
+   * -----    */
 
   var NAME = 'alert';
   var VERSION = '4.5.0';
@@ -279,10 +271,8 @@
   var CLASS_NAME_FADE = 'fade';
   var CLASS_NAME_SHOW = 'show';
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Class Definition
+   * -----    */
 
   var Alert = /*#__PURE__*/function () {
     function Alert(element) {
@@ -394,18 +384,14 @@
     return Alert;
   }();
   /**
-   * ------------------------------------------------------------------------
-   * Data Api implementation
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Data Api implementation
+   * -----    */
 
 
   $(document).on(EVENT_CLICK_DATA_API, SELECTOR_DISMISS, Alert._handleDismiss(new Alert()));
   /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
+   * -----    * jQuery
+   * -----    */
 
   $.fn[NAME] = Alert._jQueryInterface;
   $.fn[NAME].Constructor = Alert;
@@ -416,10 +402,8 @@
   };
 
   /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Constants
+   * -----    */
 
   var NAME$1 = 'button';
   var VERSION$1 = '4.5.0';
@@ -441,10 +425,8 @@
   var EVENT_FOCUS_BLUR_DATA_API = "focus" + EVENT_KEY$1 + DATA_API_KEY$1 + " " + ("blur" + EVENT_KEY$1 + DATA_API_KEY$1);
   var EVENT_LOAD_DATA_API = "load" + EVENT_KEY$1 + DATA_API_KEY$1;
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Class Definition
+   * -----    */
 
   var Button = /*#__PURE__*/function () {
     function Button(element) {
@@ -532,10 +514,8 @@
     return Button;
   }();
   /**
-   * ------------------------------------------------------------------------
-   * Data Api implementation
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Data Api implementation
+   * -----    */
 
 
   $(document).on(EVENT_CLICK_DATA_API$1, SELECTOR_DATA_TOGGLE_CARROT, function (event) {
@@ -597,10 +577,8 @@
     }
   });
   /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
+   * -----    * jQuery
+   * -----    */
 
   $.fn[NAME$1] = Button._jQueryInterface;
   $.fn[NAME$1].Constructor = Button;
@@ -611,10 +589,8 @@
   };
 
   /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Constants
+   * -----    */
 
   var NAME$2 = 'carousel';
   var VERSION$2 = '4.5.0';
@@ -683,10 +659,8 @@
     PEN: 'pen'
   };
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Class Definition
+   * -----    */
 
   var Carousel = /*#__PURE__*/function () {
     function Carousel(element, config) {
@@ -1167,10 +1141,8 @@
     return Carousel;
   }();
   /**
-   * ------------------------------------------------------------------------
-   * Data Api implementation
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Data Api implementation
+   * -----    */
 
 
   $(document).on(EVENT_CLICK_DATA_API$2, SELECTOR_DATA_SLIDE, Carousel._dataApiClickHandler);
@@ -1184,10 +1156,8 @@
     }
   });
   /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
+   * -----    * jQuery
+   * -----    */
 
   $.fn[NAME$2] = Carousel._jQueryInterface;
   $.fn[NAME$2].Constructor = Carousel;
@@ -1198,10 +1168,8 @@
   };
 
   /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Constants
+   * -----    */
 
   var NAME$3 = 'collapse';
   var VERSION$3 = '4.5.0';
@@ -1231,10 +1199,8 @@
   var SELECTOR_ACTIVES = '.show, .collapsing';
   var SELECTOR_DATA_TOGGLE$1 = '[data-toggle="collapse"]';
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Class Definition
+   * -----    */
 
   var Collapse = /*#__PURE__*/function () {
     function Collapse(element, config) {
@@ -1509,10 +1475,8 @@
     return Collapse;
   }();
   /**
-   * ------------------------------------------------------------------------
-   * Data Api implementation
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Data Api implementation
+   * -----    */
 
 
   $(document).on(EVENT_CLICK_DATA_API$3, SELECTOR_DATA_TOGGLE$1, function (event) {
@@ -1533,10 +1497,8 @@
     });
   });
   /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
+   * -----    * jQuery
+   * -----    */
 
   $.fn[NAME$3] = Collapse._jQueryInterface;
   $.fn[NAME$3].Constructor = Collapse;
@@ -1547,10 +1509,8 @@
   };
 
   /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Constants
+   * -----    */
 
   var NAME$4 = 'dropdown';
   var VERSION$4 = '4.5.0';
@@ -1614,10 +1574,8 @@
     popperConfig: '(null|object)'
   };
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Class Definition
+   * -----    */
 
   var Dropdown = /*#__PURE__*/function () {
     function Dropdown(element, config) {
@@ -2032,10 +1990,8 @@
     return Dropdown;
   }();
   /**
-   * ------------------------------------------------------------------------
-   * Data Api implementation
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Data Api implementation
+   * -----    */
 
 
   $(document).on(EVENT_KEYDOWN_DATA_API, SELECTOR_DATA_TOGGLE$2, Dropdown._dataApiKeydownHandler).on(EVENT_KEYDOWN_DATA_API, SELECTOR_MENU, Dropdown._dataApiKeydownHandler).on(EVENT_CLICK_DATA_API$4 + " " + EVENT_KEYUP_DATA_API, Dropdown._clearMenus).on(EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$2, function (event) {
@@ -2047,10 +2003,8 @@
     e.stopPropagation();
   });
   /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
+   * -----    * jQuery
+   * -----    */
 
   $.fn[NAME$4] = Dropdown._jQueryInterface;
   $.fn[NAME$4].Constructor = Dropdown;
@@ -2061,10 +2015,8 @@
   };
 
   /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Constants
+   * -----    */
 
   var NAME$5 = 'modal';
   var VERSION$5 = '4.5.0';
@@ -2112,10 +2064,8 @@
   var SELECTOR_FIXED_CONTENT = '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top';
   var SELECTOR_STICKY_CONTENT = '.sticky-top';
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
-   */
+   * -----    * Class Definition
+   * -----    */
 
   var Modal = /*#__PURE__*/function () {
     function Modal(element, config) {

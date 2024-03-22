@@ -1,11 +1,8 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/*# General*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
 a {
   color: #3498db;
 }
@@ -18,12 +15,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
-/*--------------------------------------------------------------
-# loader
---------------------------------------------------------------*/
-
-
+/*# loader*/
 .loader {
   --dim: 3rem;
   width: var(--dim);
@@ -84,9 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/*# Breadcrumbs*/
 .breadcrumbs {
   padding: 40px 0;
   margin-top: 70px;
@@ -128,10 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
   }
 }
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*# Sections General*/
 section {
   padding: 60px 0;
 }
@@ -180,11 +167,7 @@ section {
   margin-bottom: 0;
   font-size: medium;
 }
-
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/*# Back to top button*/
 .back-to-top {
   position: fixed;
   display: none;
@@ -210,10 +193,7 @@ section {
   background: #473E69;
   color: #fff;
 }
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*# Header*/
 #header {
   display: flex;
   align-items: center;
@@ -237,10 +217,7 @@ section {
     max-height: 23px;
   }
 }
-
-/*--------------------------------------------------------------
-# Header Social Links
---------------------------------------------------------------*/
+/*# Header Social Links*/
 .header-social-links {
   position: relative;
 }
@@ -261,7 +238,6 @@ section {
 @media (max-width: 768px) {
   .header-social-links {
     padding-right: 40px;
-    
      /* Adjust this value */
   }
   .header-social-links a {
@@ -269,10 +245,7 @@ section {
    /* Adjust this value */
   }
 }
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/*# Navigation Menu*/
 /* Desktop Navigation */
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -354,7 +327,6 @@ section {
     letter-spacing: 0.05em;
     color: #070c10;
   }
-
 }
 
 .nav-menu .linkh {
@@ -477,13 +449,9 @@ section {
     content: "\ea9d";
   }
 }
-
 /* Mobile Navigation */
-/* 
-Code Explanation:
-The code snippet defines the styles for a mobile navigation menu. It includes styles for the toggle button, the menu itself, and the dropdown submenus.
-*/
-
+/* Code Explanation:
+The code snippet defines the styles for a mobile navigation menu. It includes styles for the toggle button, the menu itself, and the dropdown submenus.*/
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -589,10 +557,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/*# Hero Section*/
 #hero {
   width: 100%;
   height: 90vh;
@@ -603,8 +568,6 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   padding: 0;
 
 }
-
-
 #hero .text-overlay {
   position: absolute;
   top: 50%;
@@ -613,8 +576,6 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   z-index: 1; /* Set a higher z-index to position the text in front of the video */
   color: #fff; /* Adjust text color as needed */
 }
-
-
 #hero:before {
   content: "";
   /*background: rgba(56, 64, 70, 0.7);*/
@@ -686,15 +647,12 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   }
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/*# About*/
 .about {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 10px 0;
-  
+  padding: 10px 0; 
 }
 
 .about h3 {
@@ -728,14 +686,12 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   float: left;
   width: 50%;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -766,8 +722,6 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   background-color: white; /* Change background color */
   color: black; /* Change text color */
 }
-
-
 .about ul li {
   position: relative;
   padding-left: 26px;
@@ -810,11 +764,8 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   height: 50%;
   object-fit: fill;
   border-top-left-radius: 20%;
-  border-bottom-right-radius: 20%;
-  
+  border-bottom-right-radius: 20%; 
 }
-
-
 .about .big-height {
   width: 500px;
   height: 300px;
@@ -857,18 +808,12 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
     box-shadow: 0 0 0 45px rgba(193,244,246,0);
   }
 }
-
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
+/*# Clients*/
 .clients {
   background: #fff;
   padding: 10px 0;
   text-align: center;
 }
-
-
 .clients .col-lg-2 {
   display: flex;
   align-items: center;
@@ -934,11 +879,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
     width: 70%;
   }
 }
-
-/*--------------------------------------------------------------
-# What We Do
---------------------------------------------------------------*/
-
+/*# What We Do*/
 .what-we-do .btn-get-started {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -957,8 +898,6 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   background: #4859A3;
 }
 
-
-
 .what-we-do .zoom-container {
   overflow: hidden;
 }
@@ -974,9 +913,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   transform: rotateY(360deg);
 }
 
-/*--------------------------------------------------------------
-# What we do 2 Section
---------------------------------------------------------------*/
+/*# What we do 2 Section*/
 .what-we-do2 .first-row .featured-col .featured-box {
   padding: 15px 15px;
   border-left: 1px solid #000;
@@ -1021,10 +958,7 @@ The code snippet defines the styles for a mobile navigation menu. It includes st
   border-radius: 0px;
 }
 
-/*--------------------------------------------------------------
-# Why partner Section
---------------------------------------------------------------*/
-
+/*# Why partner Section*/
 .why-partner {
   position: relative;
   width: 100%;
@@ -1055,16 +989,13 @@ color: #473E69;
   font-family: 'Helvetica', sans-serif;
   font-size: 2em; /* Adjust the font size as needed */
   font-weight: bold;
-
-  /* Text color */
+/* Text color */
   color: #473E69; /* Adjust the color as needed */
-
-  /* Margin and padding for spacing */
+/* Margin and padding for spacing */
   margin-top: 10px;
   margin-bottom: 10px;
-
-  /* Other styles */
-  /* Add any other styles you want, such as text decoration, letter spacing, etc. */
+/* Other styles */
+/* Add any other styles you want, such as text decoration, letter spacing, etc. */
 }
 
 .why-partner p {
@@ -1073,22 +1004,16 @@ color: #473E69;
   font-size: 1em; /* Adjust the font size as needed */
   line-height: 1.5; /* Adjust the line height for better readability */
   font-weight: normal;
-
-  /* Text color */
+/* Text color */
   color: #666; /* Adjust the color as needed */
-
-  /* Margin and padding for spacing */
+/* Margin and padding for spacing */
   margin-top: 10px;
   margin-bottom: 10px;
-
-  /* Other styles */
-  /* Add any other styles you want, such as text decoration, letter spacing, etc. */
+/* Other styles */
+/* Add any other styles you want, such as text decoration, letter spacing, etc. */
 }
 
-/*--------------------------------------------------------------
-# Map Section
---------------------------------------------------------------*/
-
+/*# Map Section*/
 .ag-canvas {
   display: flex;
   align-items: center;
@@ -1249,10 +1174,7 @@ color: #473E69;
   fill: #06D6A0;
 }
 
-/*--------------------------------------------------------------
-# Analytics and Automation Section
---------------------------------------------------------------*/
-
+/*# Analytics and Automation Section*/
 .analytics-and-automation-box img {
   width: 100%;
   filter: grayscale(100);
@@ -1266,11 +1188,7 @@ color: #473E69;
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-
-
+/*# Contact*/
 .contact {
   background: #FFF;
 }
@@ -1280,7 +1198,6 @@ color: #473E69;
   border-radius: 20px; /* Adjust the value based on your preference */
   border: 3px solid #06D6A0;
 }
-
 
 .contact .info i {
   margin-right: 5px;
@@ -1303,7 +1220,6 @@ color: #473E69;
   color: #070809;
 }
 
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1322,10 +1238,7 @@ color: #473E69;
   }
 }
 
-/*--------------------------------------------------------------
-# Cookies
---------------------------------------------------------------*/
-
+/*# Cookies*/
 :root {
 	--background: #06D6A0;
 	--white-text: #fff;
@@ -1333,7 +1246,6 @@ color: #473E69;
 	--button-background: #fff;
 	--button-background-hover: #000;
 	--button-text: #007af7;
-	
 }
 
 .cookie-container {
@@ -1389,9 +1301,7 @@ color: #473E69;
 		color: var(--white-text);
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*# Footer*/
 #footer {
   color: #444444;
   font-size: 14px;
@@ -1519,12 +1429,8 @@ color: #473E69;
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# RPA Page
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Hero 1 Section
---------------------------------------------------------------*/
+/*# RPA Page*/
+/*# Hero 1 Section*/
 #hero1 {
   width: 100%;
   height: 60vh;
@@ -1535,7 +1441,6 @@ color: #473E69;
   padding: 0;
 }
 
-
 #hero1 .text-overlay {
   position: absolute;
   top: 50%;
@@ -1544,7 +1449,6 @@ color: #473E69;
   z-index: 1; /* Set a higher z-index to position the text in front of the video */
   color: #fff; /* Adjust text color as needed */
 }
-
 
 #hero1:before {
   content: "";
@@ -1577,8 +1481,6 @@ color: #473E69;
   margin-bottom: 30px;
   font-size: 24px;
 }
-
-
 
 #hero1 .btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -1616,9 +1518,7 @@ color: #473E69;
   }
 }
 
-/*--------------------------------------------------------------
-# About 2
---------------------------------------------------------------*/
+/*# About 2*/
 .about2 {
   position: relative;
   width: 100%;
@@ -1637,9 +1537,7 @@ color: #473E69;
   font-size: 32px;
 }
 
-/*--------------------------------------------------------------
-# About 3
---------------------------------------------------------------*/
+/*# About 3*/
 .about3 {
   position: relative;
   width: 100%;
@@ -1661,7 +1559,6 @@ color: #473E69;
   font-size: 32px;
 }
 
-
 .about3 .icon-boxes {
   padding-top: 10px;
 }
@@ -1673,13 +1570,11 @@ color: #473E69;
 }
 
 .about3 .icofont-hand-right {
-  /* Add your CSS styles here */
+/* Add your CSS styles here */
   color: #06D6A0; /* Change color to red as an example */
   font-size: 30px; /* Change font size to 20 pixels as an example */
-  /* Add any other styles you want to modify */
+/* Add any other styles you want to modify */
 }
-
-
 
 .about3 .icon-boxes p {
   font-size: 15px;
@@ -1704,7 +1599,6 @@ color: #473E69;
   }
 }
 
-
 @media (max-width: 768px) {
   .about3 img {
     width: 100%; /* Make the video fill the entire width on screens up to 768px */
@@ -1712,9 +1606,7 @@ color: #473E69;
   }
 }
 
-/*--------------------------------------------------------------
-# What We Offer-RPA
---------------------------------------------------------------*/
+/*# What We Offer-RPA*/
 .what-we-offer .icon-box {
   text-align: center;
   border-radius: 27px;
@@ -1730,7 +1622,7 @@ color: #473E69;
   .what-we-offer .icon-box {
     padding: 10px 15px; /* reduce padding */
     margin-bottom: 20px; /* reduce margin */
-    /* adjust other properties as needed */
+/* adjust other properties as needed */
   }
 }
 
@@ -1779,9 +1671,7 @@ color: #473E69;
   color: #06D6A0;
 }
 
-/*--------------------------------------------------------------
-# Key Features-RPA
---------------------------------------------------------------*/
+/*# Key Features-RPA*/
 #key {
   position: relative;
   overflow: hidden;
@@ -1796,7 +1686,6 @@ color: #473E69;
   margin: 0 auto;
   animation: moveUpDown 4s infinite alternate; /* 4s duration, infinite loop, alternate direction */
 }
-
 
 .key-image button {
   margin: 0 auto; /* or text-align: center; */
@@ -1907,13 +1796,8 @@ color: #473E69;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/*--------------------------------------------------------------
-# Industries Serves
---------------------------------------------------------------*/
-/* 
-CSS code snippet to style member elements within the "industries-we-serve" class.
-*/
-
+/*# Industries Serves*/
+/* CSS code snippet to style member elements within the "industries-we-serve" class.*/
 .industries-we-serve .member {
   text-align: center;
   margin-bottom: 20px;
@@ -1921,7 +1805,6 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   padding: 30px 20px;
   background: #fff;
 }
-
 
 .industries-we-serve .member img {
   max-width: 100%;
@@ -1954,7 +1837,6 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   width: 100%;
 }
 
-
 .industries-we-serve .member span {
   font-style: italic;
   display: block;
@@ -1986,10 +1868,7 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   margin: 0 2px;
 }
 
-/*--------------------------------------------------------------
-# FAQ
---------------------------------------------------------------*/
-
+/*# FAQ*/
 .section-faq {
   display:flex;
   align-items: center;
@@ -2048,13 +1927,11 @@ CSS code snippet to style member elements within the "industries-we-serve" class
   margin-left: auto;
   order: 2; /* Set the order property to move it to the right in a flex container */
 }
-
 /* Make sure the image doesn't exceed its container */
 .section-faq .faq-image img {
   max-width: 150%;
   height: auto;
 }
-
 
 .section-faq .questions .single-question > div {
     display: flex;
@@ -2101,10 +1978,7 @@ CSS code snippet to style member elements within the "industries-we-serve" class
 	}
 }
 
-
-/*--------------------------------------------------------------
-# Hero-Section Section
---------------------------------------------------------------*/
+/*# Hero-Section Section*/
 .hero-section {
   background: linear-gradient(to right, rgba(6, 214, 160, 0.8) 0%, rgba(71, 62, 105, 0.8) 100%), url(../img/hero-bg.jpg);
   position: relative;
@@ -2439,5 +2313,4 @@ CSS code snippet to style member elements within the "industries-we-serve" class
 
 .key-features .feature {
   animation: fadeIn 0.5s ease-in-out forwards;
-}
-  
+} 
