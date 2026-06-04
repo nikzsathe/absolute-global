@@ -37,7 +37,9 @@ textarea { width: 200px; -moz-box-sizing: border-box; -webkit-box-sizing: border
   <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -84,30 +86,31 @@ textarea { width: 200px; -moz-box-sizing: border-box; -webkit-box-sizing: border
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2><b>Application Form</b></h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Form for Applying</li>
-          </ol>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero-careers" class="d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="display-4 font-weight-bold mb-4">Build Your <span class="text-accent">Future</span> With Us</h1>
+        <p class="lead mb-4" style="color: var(--text-muted); max-width: 700px; margin: 0 auto;">Join Absolute Global Outsourcing and be part of a team that's redefining the digital landscape through innovation and excellence.</p>
+        <div class="breadcrumb-custom mt-5">
+            <a href="../index.html">Home</a> <span class="mx-2" style="color: var(--text-muted)">/</span> <span style="color: var(--accent-primary)">Careers</span>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section><!-- End Hero Section -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container py-5">
-           <div class="output" id="output">
-    <h1 class="cursor"></h1>
-    <p></p>
-  </div>
-<br>
-<b>Fill in your details, our HR team will get in touch with you soon!</b><br></br>
+    <!-- ======= Application Section ======= -->
+    <section id="application" class="application-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="glass-card p-5">
+              <div class="output-container mb-5" id="output">
+                <h2 class="typewriter-h font-weight-bold mb-3"></h2>
+                <p class="typewriter-p text-muted lead"></p>
+              </div>
+              <div class="form-header text-center mb-5">
+                <h3 class="mb-2">Send Your Application</h3>
+                <p class="text-muted">Fill in your details, our HR team will get in touch with you soon!</p>
+              </div>
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
@@ -118,13 +121,17 @@ textarea { width: 200px; -moz-box-sizing: border-box; -webkit-box-sizing: border
   });
 </script>
 
-
+              <div class="ambition-banner mt-5 text-center p-4">
+                <p class="text-muted small mb-3">Recognized for Excellence</p>
+                <a href='https://www.ambitionbox.com/overview/absolute-global-outsourcing-overview?utm_source=employer-dashboard&utm_campaign=absolute-global-outsourcing&utm_medium=badges' target="_blank">
+                  <img src='https://employer.ambitionbox.com/api/badge/842031?badge-type=ratings-detailed' alt="Ambition Box Ratings" class="img-fluid rounded shadow-sm">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- End Portfolio Details Section -->
-    <div class"ambition">
-<a href='https://www.ambitionbox.com/overview/absolute-global-outsourcing-overview?utm_source=employer-dashboard&utm_campaign=absolute-global-outsourcing&utm_medium=badges'><img src='https://employer.ambitionbox.com/api/badge/842031?badge-type=ratings-detailed' alt="image"/></a>
-</div>
   </main>
   <!-- End #main -->
 
@@ -252,16 +259,16 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-  "Join us and become part of a dynamic and forward-thinking team that is dedicated to making a positive impact. At our organization, we are passionate about what we do and are committed to delivering exceptional results. We offer a range of exciting career opportunities that allow individuals to grow and develop their skills and expertise", 
-  "When you join our team, you will be joining a supportive and collaborative work environment where you will have the opportunity to work with talented professionals from diverse backgrounds. We believe in investing in our employees and offer a range of training and development programs to help individuals achieve their full potential.", 
-  "We also believe in work-life balance and offer flexible working arrangements that allow individuals to balance their professional and personal commitments. Whether you are looking for a challenging new career opportunity or are just starting out in your career, we encourage you to explore the exciting opportunities available at our organization and join us in making a positive impact."
+  "Innovation Accelerated. | Join our team of forward-thinking professionals and shape the future of demand generation.", 
+  "Culture of Excellence. | Experience a supportive and collaborative environment where your growth is our priority.", 
+  "Global Impact. | From database management to high-end sales enablement, we deliver results that matter."
 ];
 
 // Speed (in milliseconds) of typing.
-var speedForward = 100, //Typing Speed
-    speedWait = 1000, // Wait between typing and backspacing
-    speedBetweenLines = 1000, //Wait between first and second lines
-    speedBackspace = 25; //Backspace Speed
+var speedForward = 60, //Typing Speed
+    speedWait = 2500, // Wait between typing and backspacing
+    speedBetweenLines = 800, //Wait between first and second lines
+    speedBackspace = 30; //Backspace Speed
 
 //Run the loop
 typeWriter("output", textArray);
@@ -269,8 +276,8 @@ typeWriter("output", textArray);
 function typeWriter(id, ar) {
   var element = $("#" + id),
       aString = ar[a],
-      eHeader = element.children("h1"), //Header element
-      eParagraph = element.children("p"); //Subheader element
+      eHeader = element.find(".typewriter-h"), //Header element
+      eParagraph = element.find(".typewriter-p"); //Subheader element
   
   // Determine if animation should be typing or backspacing
   if (!isBackspacing) {
