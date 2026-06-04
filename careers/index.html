@@ -345,6 +345,55 @@ function typeWriter(id, ar) {
 
 
 
+  <!-- Announcement Modal -->
+  <div id="noticeModal" class="modal-custom">
+    <div class="modal-content-custom">
+      <div class="modal-header-custom">
+        <div class="icon-circle">
+          <i class="bx bx-info-circle"></i>
+        </div>
+        <button id="closeNotice" class="btn-close-custom">&times;</button>
+      </div>
+      <div class="modal-body-custom">
+        <h3>Join Our Team</h3>
+        <p>Thank you for your interest in joining our team. We currently do not have any open positions available. Please stay tuned for future opportunities and updates.</p>
+      </div>
+      <div class="modal-footer-custom">
+        <button id="okBtn" class="btn-primary-custom">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('noticeModal');
+      const closeBtn = document.getElementById('closeNotice');
+      const okBtn = document.getElementById('okBtn');
+
+      // Show the modal on load
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 500);
+
+      const closeModal = () => {
+        modal.classList.remove('show');
+        setTimeout(() => {
+          modal.style.display = 'none';
+        }, 400);
+      };
+
+      closeBtn.onclick = closeModal;
+      okBtn.onclick = closeModal;
+
+      // Close if clicked outside
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          closeModal();
+        }
+      }
+    });
+  </script>
+
 </body>
 
 </html>
