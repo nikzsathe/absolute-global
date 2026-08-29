@@ -142,3 +142,11 @@ Simple localStorage-based cookie banner on all pages.
 - Copy `assets/img` to `public/assets/img` or import via Vite
 - Copy `favicon.*` to `public/`
 - Handle `.html` extension redirects via hosting config (Netlify/Vercel/_redirects)
+## Legacy URL Handling (post-cleanup)
+
+The original standalone HTML files (aq.html, obotic-process-automation.html, and the per-page index.html files inside legacy page directories) have been removed. Legacy deep URLs are handled as follows:
+
+- In-app: App.jsx contains redirect routes (aq.html -> /faq, /b2b/index.html -> /b2b, etc.).
+- Dev/preview: the legacy-html-fallback plugin in ite.config.js serves the SPA for any GET request ending in .html that does not exist in public/.
+- Production static hosting: configure redirects mapping legacy .html URLs to / (or the matching clean route). The mapping table above lists every legacy URL and its target.
+

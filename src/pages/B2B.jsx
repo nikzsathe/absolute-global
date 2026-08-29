@@ -574,7 +574,7 @@ const B2B = () => {
                         </div>
                         <div className="col-6 col-md-4">
                           <div className="analytics-and-automation-box">
-                              <img className="img-fluid" src="/assets/img/Salesforce-Pardot.webp" alt="Salesforce-Pardot" />
+                              <img className="img-fluid" src="/assets/img/salesforce-pardot.webp" alt="Salesforce-Pardot" />
                           </div>
                       </div>
                         <div className="col-6 col-md-4">
