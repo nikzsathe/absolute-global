@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build_temp/
+
+# Package manager caches/stores
+.pnpm-store/
+.pnpm-cache/
+.npm-cache/
+.npmrc
+
+# Logs
+*.log
+
+# Temp / scratch
+.tmp/
+tmp/
+
+# Editor
+.vscode/

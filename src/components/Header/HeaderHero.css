@@ -1,0 +1,65 @@
+/* Floating overlay presentation of the existing Header — active only on the
+   homepage while at the top of the page (see Header.jsx header-hero-mode). */
+
+#header.header-hero-mode {
+  background: rgba(255, 255, 255, 0.78);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 40px rgba(23, 20, 38, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 18px;
+  width: min(1340px, calc(100% - 28px));
+  margin: 14px auto 0;
+  height: 64px;
+}
+
+#header.header-hero-mode .logo img {
+  max-height: 34px;
+}
+
+/* Staggered entrance for the floating nav pieces (keyframes live in Hero.css) */
+#header.header-hero-mode .logo,
+#header.header-hero-mode .nav-menu,
+#header.header-hero-mode .cta,
+#header.header-hero-mode .header-social-links {
+  opacity: 0;
+  animation: agHeroRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+#header.header-hero-mode .logo {
+  animation-delay: 0ms;
+}
+
+#header.header-hero-mode .nav-menu {
+  animation-delay: 100ms;
+}
+
+#header.header-hero-mode .cta {
+  animation-delay: 200ms;
+}
+
+#header.header-hero-mode .header-social-links {
+  animation-delay: 260ms;
+}
+
+@media (max-width: 768px) {
+  #header.header-hero-mode {
+    margin-top: 10px;
+    height: 58px;
+    border-radius: 14px;
+  }
+
+  #header.header-hero-mode .logo img {
+    max-height: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #header.header-hero-mode .logo,
+  #header.header-hero-mode .nav-menu,
+  #header.header-hero-mode .cta,
+  #header.header-hero-mode .header-social-links {
+    animation: none;
+    opacity: 1;
+  }
+}
