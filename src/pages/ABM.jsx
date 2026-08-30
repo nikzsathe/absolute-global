@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 
 
@@ -12,6 +13,20 @@ const ABM = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Account-Based Marketing (ABM) Services"
+        description="Reach and engage your high-value target accounts with precision Account-Based Marketing strategies from Absolute Global Outsourcing."
+        path="/abm"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          serviceType: 'Account-Based Marketing',
+          name: 'Account-Based Marketing (ABM) Services',
+          provider: { '@type': 'Organization', name: 'Absolute Global Outsourcing', url: 'https://absolute-global.com' },
+          description: 'Account-based marketing services that target and engage high-value accounts with precision.',
+          url: 'https://absolute-global.com/abm',
+        }}
+      />
       <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
          
           <div className="container text-center text-md-left" data-aos="fade-up">

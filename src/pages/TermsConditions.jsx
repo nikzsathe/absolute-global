@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import BackToTop from '../components/BackToTop/BackToTop';
 import HubSpotChat from '../components/HubSpotChat/HubSpotChat';
@@ -15,6 +16,11 @@ const TermsConditions = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Terms & Conditions"
+        description="Review the terms and conditions for using Absolute Global Outsourcing's website and services."
+        path="/terms-conditions"
+      />
       <HubSpotChat />
       <header id="header" className="fixed-top d-flex align-items-center">
           <div className="container d-flex align-items-center">

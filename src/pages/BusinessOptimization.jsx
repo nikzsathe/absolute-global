@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 
 
@@ -12,6 +13,20 @@ const BusinessOptimization = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Business Process Optimization Services"
+        description="Elevate your operations with Absolute Global Outsourcing's business process optimization services."
+        path="/business-optimization"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          serviceType: 'Business Process Optimization',
+          name: 'Business Process Optimization Services',
+          provider: { '@type': 'Organization', name: 'Absolute Global Outsourcing', url: 'https://absolute-global.com' },
+          description: 'Business process optimization services to improve efficiency and operations.',
+          url: 'https://absolute-global.com/business-optimization',
+        }}
+      />
       <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
          
           <div className="container text-center text-md-left" data-aos="fade-up">

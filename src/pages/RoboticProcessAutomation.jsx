@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import FAQQuestions from '../components/FAQQuestions/FAQQuestions';
 
@@ -22,6 +23,31 @@ const RoboticProcessAutomation = () => {
   const [mobileNavOpen, setMobileNavOpen] = React.useState(false);
   return (
     <>
+      <SEO
+        title="Robotic Process Automation (RPA) Services"
+        description="Unlock the potential of RPA for business evolution with tailored automation solutions that increase efficiency and reduce costs."
+        path="/robotic-process-automation"
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            serviceType: 'Robotic Process Automation',
+            name: 'Robotic Process Automation (RPA) Services',
+            provider: { '@type': 'Organization', name: 'Absolute Global Outsourcing', url: 'https://absolute-global.com' },
+            description: 'RPA services that automate repetitive business processes to improve efficiency and reduce errors.',
+            url: 'https://absolute-global.com/robotic-process-automation',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
+          },
+        ]}
+      />
       <HubSpotChat />
       <header id="header" className="fixed-top d-flex align-items-center">
           <div className="container d-flex align-items-center">

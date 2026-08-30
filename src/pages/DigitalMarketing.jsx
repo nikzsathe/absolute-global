@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 
 
@@ -12,6 +13,20 @@ const DigitalMarketing = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Digital Marketing Solutions for B2B Brands"
+        description="Maximize your online presence and drive measurable results with expert, multi-channel digital marketing services from Absolute Global Outsourcing."
+        path="/digital-marketing"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          serviceType: 'Digital Marketing',
+          name: 'Digital Marketing Solutions',
+          provider: { '@type': 'Organization', name: 'Absolute Global Outsourcing', url: 'https://absolute-global.com' },
+          description: 'Multi-channel digital marketing services to grow online presence and drive results.',
+          url: 'https://absolute-global.com/digital-marketing',
+        }}
+      />
       <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
          
           <div className="container text-center text-md-left" data-aos="fade-up">

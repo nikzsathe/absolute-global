@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import Hero from '../sections/Hero/Hero';
 import About from '../sections/About/About';
 import Clients from '../sections/Clients/Clients';
@@ -12,6 +13,11 @@ import Contact from '../sections/Contact/Contact';
 const Home = () => {
   return (
     <>
+      <SEO
+        title="B2B Lead Generation & Outsourcing Solutions"
+        description="Absolute Global Outsourcing delivers AI-driven B2B lead generation, appointment setting, account-based marketing, digital marketing, and business process consulting and optimization for complex, high-value accounts."
+        path="/"
+      />
       <Hero />
       <About />
       <Clients />
