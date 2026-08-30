@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import BackToTop from '../components/BackToTop/BackToTop';
 import HubSpotChat from '../components/HubSpotChat/HubSpotChat';
@@ -102,6 +103,11 @@ const Careers = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Careers"
+        description="Join Absolute Global Outsourcing and be part of a team redefining the digital landscape through innovation and excellence in B2B lead generation."
+        path="/careers"
+      />
       <HubSpotChat />
       <header id="header" className="fixed-top d-flex align-items-center">
           <div className="container d-flex align-items-center">

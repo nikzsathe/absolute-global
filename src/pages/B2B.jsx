@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 
 
@@ -12,6 +13,20 @@ const B2B = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="B2B Lead Generation Services"
+        description="Cutting-edge B2B lead generation services that fuel your sales pipeline and boost conversion rates, acting as an extension of your sales team."
+        path="/b2b"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          serviceType: 'B2B Lead Generation',
+          name: 'B2B Lead Generation Services',
+          provider: { '@type': 'Organization', name: 'Absolute Global Outsourcing', url: 'https://absolute-global.com' },
+          description: 'B2B lead generation services designed to fuel a sales pipeline and increase conversion rates.',
+          url: 'https://absolute-global.com/b2b',
+        }}
+      />
       <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
          
           <div className="container text-center text-md-left" data-aos="fade-up">

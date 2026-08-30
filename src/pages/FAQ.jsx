@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import FAQQuestions from '../components/FAQQuestions/FAQQuestions';
 
@@ -24,6 +25,20 @@ const FAQ = () => {
   const [mobileNavOpen, setMobileNavOpen] = React.useState(false);
   return (
     <>
+      <SEO
+        title="Frequently Asked Questions"
+        description="Answers to common questions about B2B lead generation, demand generation, ABM, appointment setting, and working with Absolute Global Outsourcing."
+        path="/faq"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqItems.map((item) => ({
+            '@type': 'Question',
+            name: item.q,
+            acceptedAnswer: { '@type': 'Answer', text: item.a },
+          })),
+        }}
+      />
       <HubSpotChat />
       <header id="header" className="fixed-top d-flex align-items-center">
           <div className="container d-flex align-items-center">

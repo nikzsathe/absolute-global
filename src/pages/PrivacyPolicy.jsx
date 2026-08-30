@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import BackToTop from '../components/BackToTop/BackToTop';
 import HubSpotChat from '../components/HubSpotChat/HubSpotChat';
@@ -15,6 +16,11 @@ const PrivacyPolicy = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Privacy Policy"
+        description="Read the Absolute Global Outsourcing privacy policy to learn how we collect, use, and protect your information."
+        path="/privacy-policy"
+      />
       <HubSpotChat />
       <header id="header" className="fixed-top d-flex align-items-center">
           <div className="container d-flex align-items-center">

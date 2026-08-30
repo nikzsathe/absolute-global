@@ -1,0 +1,36 @@
+# Absolute Global Outsourcing — robots.txt
+
+# General search crawlers
+User-agent: *
+Allow: /
+
+# AI answer-engine / agent crawlers — explicitly allowed so these platforms
+# can retrieve and cite this site in AI-generated answers.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Training-only crawler (Common Crawl). Blocking this does not affect
+# citation in ChatGPT/Claude/Perplexity/AI Overviews — only Common
+# Crawl-derived model training.
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://absolute-global.com/sitemap.xml

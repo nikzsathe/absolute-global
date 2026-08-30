@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 
 
@@ -12,6 +13,20 @@ const AppointmentSetting = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="B2B Appointment Setting Services"
+        description="Simplify your business interactions with managed B2B appointment setting that streamlines scheduling and delivers qualified sales opportunities."
+        path="/appointment-setting"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          serviceType: 'Appointment Setting',
+          name: 'B2B Appointment Setting Services',
+          provider: { '@type': 'Organization', name: 'Absolute Global Outsourcing', url: 'https://absolute-global.com' },
+          description: 'Managed B2B appointment scheduling with qualified leads to maximize sales opportunities.',
+          url: 'https://absolute-global.com/appointment-setting',
+        }}
+      />
       <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
          
           <div className="container text-center text-md-left" data-aos="fade-up">
