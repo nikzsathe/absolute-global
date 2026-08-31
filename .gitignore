@@ -20,3 +20,9 @@ tmp/
 
 # Editor
 .vscode/
+
+# Local env
+.env
+
+# Agent editor config
+.claude/
