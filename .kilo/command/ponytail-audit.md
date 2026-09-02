@@ -1,0 +1,4 @@
+---
+description: Audit the whole repository (not just the diff) for over-engineering. Walk src/ and report only files with findings. One line per finding: <file>:L<line>: <tag> <what to cut>. <replacement>. Tags: delete (dead code/speculative feature), stdlib (reinvented standard library), native (dependency doing what the platform does), yagni (abstraction with one implementation), shrink (same logic, fewer lines). End with the net lines removable. If nothing to cut: 'Lean already. Ship.'
+---
+Audit the whole repository (not just the diff) for over-engineering. Walk src/ and report only files with findings. One line per finding: <file>:L<line>: <tag> <what to cut>. <replacement>. Tags: delete (dead code/speculative feature), stdlib (reinvented standard library), native (dependency doing what the platform does), yagni (abstraction with one implementation), shrink (same logic, fewer lines). End with the net lines removable. If nothing to cut: 'Lean already. Ship.'

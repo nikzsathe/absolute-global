@@ -1,4 +1,9 @@
 {
   "$schema": "https://app.kilo.ai/config.json",
-  "snapshot": false
+  "snapshot": false,
+  "mcp": {
+    "context7": {
+      "enabled": true
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import WindyGlobe from './WindyGlobe';
 
 const scrollToSection = (e, selector) => {
   e.preventDefault();
@@ -36,6 +37,8 @@ const Hero = () => {
           <span className="ag-hero__deco-dot"></span>
         </span>
       </div>
+
+      <WindyGlobe />
 
       <div className="ag-hero__content">
         <div className="ag-hero__inner">
