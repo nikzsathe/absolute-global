@@ -41,8 +41,13 @@ const WindyGlobeMesh = ({url, opacity = 0.75, fps = 25}) => {
 
   const geometry = useMemo(() => {
     let points = null;
+    let nodeMatrix = null;
+    gltf.scene.updateMatrixWorld(true);
     gltf.scene.traverse((obj) => {
-      if (obj.isPoints && !points) points = obj;
+      if (obj.isPoints && !points) {
+        points = obj;
+        nodeMatrix = obj.matrixWorld.clone();
+      }
     });
     if (!points) return null;
     const src = points.geometry;
@@ -56,6 +61,7 @@ const WindyGlobeMesh = ({url, opacity = 0.75, fps = 25}) => {
     }
     geo.setAttribute('aFrame', frameAttr);
     geo.computeBoundingSphere();
+    geo.userData.nodeMatrix = nodeMatrix;
     return geo;
   }, [gltf]);
 
@@ -77,7 +83,13 @@ const WindyGlobeMesh = ({url, opacity = 0.75, fps = 25}) => {
 
   if (!geometry) return null;
   return (
-    <points geometry={geometry} frustumCulled={false}>
+    <points
+      geometry={geometry}
+      frustumCulled={false}
+      matrixAutoUpdate={false}
+      matrix={geometry.userData.nodeMatrix}
+      matrixWorldAutoUpdate={false}
+    >
       <shaderMaterial
         vertexShader={vertexShader}
         fragmentShader={fragmentShader}
