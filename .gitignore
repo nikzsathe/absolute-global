@@ -26,3 +26,6 @@ tmp/
 
 # Agent editor config
 .claude/
+
+# Wrangler local state
+.wrangler/
