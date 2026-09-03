@@ -138,6 +138,7 @@ const Header = () => {
     { href: '/appointment-setting', label: 'Appointment Setting' },
     { href: '/abm', label: 'Account Based Marketing' },
     { href: '/digital-marketing', label: 'Digital Marketing' },
+    { href: '/website-development', label: 'Website Development' },
     {
       key: 'consulting',
       label: 'Consulting',
@@ -149,10 +150,10 @@ const Header = () => {
   ];
 
   const solutionItems = [
-    
-    { href: 'https://absolute-global.netlify.app/', label: 'Web Development' },
+
+    { href: '/website-development', label: '3D / Interactive Web' },
     { href: '/robotic-process-automation', label: 'Robotic Process Automation' },
-    
+
   ];
 
   const navList = () => (

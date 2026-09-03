@@ -22,9 +22,20 @@
   padding: clamp(80px, 12vh, 140px) clamp(20px, 6vw, 88px);
 }
 
+/* readability scrim: dark radial behind every chapter's text */
+.wd-chapter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 62% 58% at 50% 50%, rgba(7, 13, 24, 0.78) 0%, rgba(7, 13, 24, 0.45) 55%, rgba(7, 13, 24, 0) 100%);
+  pointer-events: none;
+}
+
 .wd-chapter__inner {
   max-width: 980px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 /* typography */
@@ -64,12 +75,14 @@
 }
 
 .wd-title__outline {
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 2px 24px rgba(6, 18, 33, 0.9);
 }
 
-@supports not (-webkit-text-stroke: 1px #fff) {
-  .wd-title__outline { color: rgba(255, 255, 255, 0.65); }
+.wd-text,
+.wd-pill,
+.wd-cap__name {
+  text-shadow: 0 1px 12px rgba(6, 18, 33, 0.85);
 }
 
 .wd-title--h1 {
@@ -82,7 +95,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: clamp(15px, 1.4vw, 18px);
   line-height: 1.7;
-  color: rgba(224, 236, 255, 0.85);
+  color: rgba(228, 240, 255, 0.95);
 }
 
 .wd-text--sanity {

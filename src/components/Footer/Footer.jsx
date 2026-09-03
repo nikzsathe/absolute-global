@@ -36,7 +36,9 @@ const Footer = () => {
                 <li><i className="bx bx-chevron-right"></i> <a href="/b2b">B2B Lead Generation Services</a></li>
                 <li><i className="bx bx-chevron-right"></i> <a href="#what-we-do">Sales Qualified leads</a></li>
                 <li><i className="bx bx-chevron-right"></i> <a href="#what-we-do">Webinar Leads</a></li>
-                <li><i className="bx bx-chevron-right"></i> <a href="#what-we-do">Intent Marketing</a></li>
+                <li><i className="bx bx-chevron-right"></i> <a href="/digital-marketing">Digital Marketing</a></li>
+                <li><i className="bx bx-chevron-right"></i> <a href="/website-development">Website Development</a></li>
+                <li><i className="bx bx-chevron-right"></i> <a href="/robotic-process-automation">Robotic Process Automation</a></li>
               </ul>
             </div>
 
