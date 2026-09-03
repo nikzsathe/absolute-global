@@ -6,6 +6,18 @@
       "sourceType": "github",
       "skillPath": "skills/sanity-best-practices/SKILL.md",
       "computedHash": "df06c7eee94f2fa4f8d2b2913b15c8d8578e091b48407018e7394a26d4c764d3"
+    },
+    "ponytail": {
+      "source": "dietrichgebert/ponytail",
+      "sourceType": "github",
+      "skillPath": "ponytail/SKILL.md",
+      "computedHash": "46a57e26a2632e7fa40eae6a3cf3011ccdc4d8db19d8f8617907d6b5deef055e"
+    },
+    "awesome-design-md": {
+      "source": "voltagent/awesome-design-md",
+      "sourceType": "github",
+      "skillPath": "awesome-design-md/SKILL.md",
+      "computedHash": "e0763e094adb68c7b95625c79e820f888f7772a4729561f46234db5837331b20"
     }
   }
 }

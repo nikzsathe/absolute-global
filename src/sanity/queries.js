@@ -40,3 +40,17 @@ export const POSTS_QUERY = `*[_type == "post" && !(_id in path("drafts.**"))] | 
   publishedAt,
   "categories": categories[]->title
 }`
+
+// Fetch a service by slug
+export const SERVICE_BY_SLUG_QUERY = `*[_type == "service" && slug.current == $slug && !(_id in path("drafts.**"))][0]{
+  _id,
+  title,
+  excerpt,
+  "slug": slug.current,
+  category,
+  featuredImage,
+  body,
+  ctaLabel,
+  ctaRoute,
+  seo
+}`

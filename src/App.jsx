@@ -13,6 +13,7 @@ import Careers from './pages/Careers';
 import RoboticProcessAutomation from './pages/RoboticProcessAutomation';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 
 // Scrolls to top on route change like a multi-page site
 const ScrollToTop = () => {
@@ -36,6 +37,7 @@ function App() {
           <Route path="digital-marketing" element={<DigitalMarketing />} />
           <Route path="business-consulting" element={<BusinessConsulting />} />
           <Route path="business-optimization" element={<BusinessOptimization />} />
+          <Route path="website-development" element={<WebsiteDevelopment />} />
           {/* Redirect legacy .html URLs */}
           <Route path="index.html" element={<Navigate to="/" replace />} />
           <Route path="b2b/index.html" element={<Navigate to="/b2b" replace />} />
