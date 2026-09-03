@@ -138,7 +138,7 @@ const Header = () => {
     { href: '/appointment-setting', label: 'Appointment Setting' },
     { href: '/abm', label: 'Account Based Marketing' },
     { href: '/digital-marketing', label: 'Digital Marketing' },
-    { href: '/website-development', label: 'Website Development' },
+    { href: '/website-development', label: 'Web Development' },
     {
       key: 'consulting',
       label: 'Consulting',
@@ -151,7 +151,7 @@ const Header = () => {
 
   const solutionItems = [
 
-    { href: '/website-development', label: '3D / Interactive Web' },
+    { href: '/website-development', label: 'Web Development' },
     { href: '/robotic-process-automation', label: 'Robotic Process Automation' },
 
   ];
@@ -170,7 +170,7 @@ const Header = () => {
 
   return (
     <>
-      <header id="header" className={`fixed-top d-flex align-items-center${heroMode ? ' header-hero-mode' : ''}`}>
+      <header id="header" className={`fixed-top d-flex align-items-center${heroMode ? ' header-hero-mode' : ''}${scrolled ? ' header-scrolled' : ''}`}>
         <div className="container d-flex align-items-center">
           <div className="logo mr-auto">
             <Link to="/"><img src="/assets/img/logo.webp" alt="absolute-logo" className="img-fluid" /></Link>

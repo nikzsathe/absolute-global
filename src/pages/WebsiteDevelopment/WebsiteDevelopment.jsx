@@ -155,6 +155,11 @@ const WebsiteDevelopment = () => {
   });
 
   useEffect(() => {
+    document.body.classList.add('wd-page');
+    return () => document.body.classList.remove('wd-page');
+  }, []);
+
+  useEffect(() => {
     let cancelled = false;
     client
       .fetch(SERVICE_BY_SLUG_QUERY, { slug: 'website-development' })

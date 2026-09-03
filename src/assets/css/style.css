@@ -1297,6 +1297,8 @@ color: #473E69;
   color: #444444;
   font-size: 14px;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(6, 214, 160, 0.8));
+  position: relative;
+  z-index: 10;
 }
 
 #footer .footer-top {
