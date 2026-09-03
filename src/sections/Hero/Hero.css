@@ -1,4 +1,4 @@
-/* Absolute Global — cinematic homepage hero.
+/* Absolute Global â€” cinematic homepage hero.
    Scoped under .ag-hero so the global #hero styles (used by other pages) are untouched. */
 
 .ag-hero {
@@ -9,23 +9,10 @@
   min-height: 100svh;
   overflow: hidden;
   isolation: isolate;
-  background: #473e69; /* brand fallback while the video loads */
+  background:
+    radial-gradient(1100px 750px at 74% 38%, #143049 0%, rgba(20, 48, 73, 0) 60%),
+    linear-gradient(160deg, #0e1c30 0%, #0a1424 55%, #101c33 100%);
   color: #fff;
-}
-
-/* ---- Layer 1: background media (z 0) ---- */
-.ag-hero__media,
-.ag-hero__media video {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.ag-hero__media video {
-  object-fit: cover;
-  object-position: center center;
 }
 
 /* ---- Layer 2: readability overlay (z 10) ---- */
@@ -34,8 +21,8 @@
   inset: 0;
   z-index: 10;
   background:
-    linear-gradient(90deg, rgba(23, 20, 38, 0.72) 0%, rgba(23, 20, 38, 0.46) 38%, rgba(23, 20, 38, 0.1) 72%, rgba(23, 20, 38, 0.28) 100%),
-    linear-gradient(180deg, rgba(71, 62, 105, 0.4) 0%, rgba(23, 20, 38, 0) 42%, rgba(23, 20, 38, 0.5) 100%);
+    linear-gradient(90deg, rgba(10, 16, 28, 0.6) 0%, rgba(10, 16, 28, 0.35) 38%, rgba(10, 16, 28, 0) 72%, rgba(10, 16, 28, 0.18) 100%),
+    linear-gradient(180deg, rgba(10, 16, 28, 0.25) 0%, rgba(10, 16, 28, 0) 42%, rgba(10, 16, 28, 0.45) 100%);
 }
 
 /* ---- Layer 3: decorative elements (z 15) ---- */
@@ -71,24 +58,6 @@
 @keyframes agHeroGlobeMobile {
   from { opacity: 0; }
   to { opacity: 0.75; }
-}
-
-.ag-hero__globe-fallback {
-  position: absolute;
-  z-index: 20;
-  top: 0;
-  right: 0;
-  width: clamp(420px, 46vw, 900px);
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.ag-hero__globe-fallback img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.35;
 }
 
 .ag-hero__deco-glow {
@@ -348,10 +317,6 @@
 }
 
 @media (max-width: 768px) {
-  .ag-hero__media video {
-    object-position: 60% center;
-  }
-
   .ag-hero__inner {
     padding-left: 20px;
     padding-right: 20px;

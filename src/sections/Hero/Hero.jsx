@@ -15,20 +15,6 @@ const scrollToSection = (e, selector) => {
 const Hero = () => {
   return (
     <section className="ag-hero">
-      <div className="ag-hero__media" aria-hidden="true">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          poster="/assets/img/hero-background.webp"
-          onContextMenu={(e) => e.preventDefault()}
-        >
-          <source src="/assets/img/video6.mp4" type="video/mp4" />
-        </video>
-      </div>
-
       <div className="ag-hero__overlay" aria-hidden="true"></div>
 
       <div className="ag-hero__deco" aria-hidden="true">
