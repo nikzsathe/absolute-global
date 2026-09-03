@@ -158,7 +158,7 @@ const Header = () => {
 
   const navList = () => (
     <ul>
-      <li className="active">
+      <li className={isHome ? 'active' : ''}>
         <Link to="/">Home</Link>
       </li>
       {dropDown('about', 'About', aboutItems)}

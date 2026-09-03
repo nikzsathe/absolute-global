@@ -370,6 +370,46 @@ body.wd-page #header .nav-menu a {
   color: #ffffff;
 }
 
+/* dropdown chevrons: white, matching nav text */
+body.wd-page #header .nav-menu .drop-down > a:after,
+body.wd-page #header .nav-menu .drop-down .drop-down > a:after {
+  color: #ffffff;
+}
+
+/* dropdown panels: dark theme to match the immersive experience */
+body.wd-page #header .nav-menu .drop-down ul {
+  background: rgba(7, 13, 24, 0.96);
+  box-shadow: 0 10px 30px rgba(2, 8, 18, 0.6);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+}
+
+body.wd-page #header .nav-menu .drop-down ul a {
+  color: rgba(224, 240, 255, 0.88);
+}
+
+body.wd-page #header .nav-menu .drop-down ul a:hover,
+body.wd-page #header .nav-menu .drop-down ul li:hover > a {
+  color: #22d3ee;
+}
+
+/* social icons: white, cyan on hover */
+body.wd-page #header .header-social-links a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.wd-page #header .header-social-links a:hover {
+  color: #22d3ee;
+}
+
+/* Contact Us CTA: dark text on the teal circle, arrow clearly visible */
+body.wd-page #header .cta span {
+  color: #04141b;
+}
+
+body.wd-page #header .cta svg {
+  stroke: #04141b;
+}
+
 body.wd-page #header .nav-menu a:hover,
 body.wd-page #header .nav-menu .active > a,
 body.wd-page #header .nav-menu li:hover > a {
