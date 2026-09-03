@@ -1,5 +1,298 @@
-/* Website Development page — immersive header + dark footer treatment.
-   Scoped under body.wd-page; all other pages keep the existing chrome. */
+/* Website Development — immersive scroll experience.
+   Scoped under .wd-* classes; does not touch other pages. */
+
+.wd-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.wd-main {
+  position: relative;
+  z-index: 10;
+}
+
+.wd-chapter {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(80px, 12vh, 140px) clamp(20px, 6vw, 88px);
+  position: relative;
+}
+
+/* readability scrim: dark radial behind every chapter's text */
+.wd-chapter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 62% 58% at 50% 50%, rgba(7, 13, 24, 0.78) 0%, rgba(7, 13, 24, 0.45) 55%, rgba(7, 13, 24, 0) 100%);
+  pointer-events: none;
+}
+
+.wd-chapter__inner {
+  max-width: 980px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* typography */
+.wd-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(11px, 1vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #22d3ee;
+}
+
+.wd-eyebrow__line {
+  width: 42px;
+  height: 1px;
+  background: #22d3ee;
+  flex: 0 0 auto;
+}
+
+.wd-title {
+  margin: 0 0 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5.6vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.wd-title span {
+  display: block;
+}
+
+.wd-title--h1 {
+  font-size: clamp(2.4rem, 7vw, 5.8rem);
+}
+
+.wd-text {
+  margin: 0 0 18px;
+  max-width: 640px;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.7;
+  color: rgba(228, 240, 255, 0.95);
+  text-shadow: 0 1px 12px rgba(6, 18, 33, 0.85);
+}
+
+.wd-text--sanity {
+  color: rgba(224, 236, 255, 0.65);
+  font-size: 15px;
+}
+
+.wd-text--sanity p {
+  margin: 0 0 10px;
+}
+
+/* pills */
+.wd-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 22px;
+}
+
+.wd-pill {
+  padding: 8px 16px;
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(230, 245, 255, 0.92);
+  background: rgba(34, 211, 238, 0.07);
+  text-shadow: 0 1px 12px rgba(6, 18, 33, 0.85);
+}
+
+/* capabilities list */
+.wd-caps {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
+}
+
+.wd-cap {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 12px 4px;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.18);
+}
+
+.wd-cap__num {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #22d3ee;
+}
+
+.wd-cap__name {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(15px, 1.6vw, 19px);
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(6, 18, 33, 0.85);
+}
+
+/* CTAs */
+.wd-cta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.wd-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  background: #22d3ee;
+  border: 1px solid #22d3ee;
+  color: #06121d;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.wd-cta:hover {
+  transform: scale(1.02);
+  background: #67e8f9;
+  border-color: #67e8f9;
+  color: #06121d;
+  text-decoration: none;
+}
+
+.wd-ghost {
+  position: relative;
+  padding: 6px 2px;
+  color: rgba(230, 245, 255, 0.85);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.4);
+  transition: color 0.3s ease;
+}
+
+.wd-ghost:hover {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+/* progress rail + chapter indicator */
+.wd-progress {
+  position: fixed;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 160px;
+  background: rgba(34, 211, 238, 0.18);
+  z-index: 20;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.wd-progress__bar {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #22d3ee, #0e7490);
+  transform-origin: top;
+}
+
+.wd-indicator {
+  position: fixed;
+  left: 26px;
+  bottom: 26px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 9px 18px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 999px;
+  background: rgba(7, 13, 24, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.wd-indicator__num {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #22d3ee;
+}
+
+.wd-indicator__label {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: rgba(230, 245, 255, 0.75);
+}
+
+/* hero chapter layout */
+.wd-hero .wd-text {
+  margin-bottom: 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .wd-chapter {
+    padding: 90px 20px;
+  }
+
+  .wd-caps {
+    grid-template-columns: 1fr;
+  }
+
+  .wd-progress {
+    right: 12px;
+    height: 120px;
+  }
+
+  .wd-indicator {
+    left: 14px;
+    bottom: 16px;
+  }
+}
+
+/* reduced motion: kill transitions, keep content visible */
+@media (prefers-reduced-motion: reduce) {
+  .wd-cta,
+  .wd-cta:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ============================================================
+   Website Development page chrome — dark immersive treatment.
+   Scoped under body.wd-page; all other pages keep existing chrome.
+   ============================================================ */
 
 /* dark, readable footer variant */
 body.wd-page #footer {
@@ -16,18 +309,17 @@ body.wd-page #footer h4 {
 body.wd-page #footer .footer-links ul a,
 body.wd-page #footer .footer-contact p,
 body.wd-page #footer .footer-contact b,
-body.wd-page #footer .footer-newsletter {
+body.wd-page #footer .footer-newsletter,
+body.wd-page #footer .footer-top .footer-contact {
   color: rgba(214, 231, 250, 0.82);
 }
 
 body.wd-page #footer .footer-links ul a:hover {
   color: #22d3ee;
+  text-decoration: none;
 }
 
-body.wd-page #footer .footer-links .bx {
-  color: #22d3ee;
-}
-
+body.wd-page #footer .footer-links .bx,
 body.wd-page #footer .footer-newsletter i,
 body.wd-page #footer .footer-contact i {
   color: #22d3ee;
@@ -47,7 +339,8 @@ body.wd-page #footer .social-links a:hover {
   color: #06121d;
 }
 
-body.wd-page #footer .copyright {
+body.wd-page #footer .copyright,
+body.wd-page #footer .credits {
   color: rgba(214, 231, 250, 0.6);
 }
 
@@ -55,7 +348,7 @@ body.wd-page #footer .credits a {
   color: #22d3ee;
 }
 
-/* immersive header: translucent dark pill, readable over the 3D scene */
+/* immersive header: translucent dark, readable over the 3D scene */
 body.wd-page #header {
   background: rgba(7, 13, 24, 0.55);
   -webkit-backdrop-filter: blur(14px);
