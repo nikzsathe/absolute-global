@@ -1,4 +1,4 @@
-/* Website Development — immersive scroll experience.
+/* Website Development ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â immersive scroll experience.
    Scoped under .wd-* classes; does not touch other pages. */
 
 .wd-canvas {
@@ -290,7 +290,7 @@
 }
 
 /* ============================================================
-   Website Development page chrome — dark immersive treatment.
+   Website Development page chrome ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â dark immersive treatment.
    Scoped under body.wd-page; all other pages keep existing chrome.
    ============================================================ */
 
@@ -298,6 +298,10 @@
 body.wd-page #footer {
   background: linear-gradient(180deg, #0a1424 0%, #070d18 100%);
   color: rgba(230, 240, 255, 0.82);
+}
+
+body.wd-page #footer .logo img {
+  filter: brightness(0) invert(1);
 }
 
 body.wd-page #footer h2,
@@ -350,7 +354,7 @@ body.wd-page #footer .credits a {
 
 /* immersive header: translucent dark, readable over the 3D scene */
 body.wd-page #header {
-  background: rgba(7, 13, 24, 0.55);
+  background: rgba(7, 13, 24, 0.92);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   box-shadow: 0 10px 34px rgba(2, 8, 18, 0.45);
@@ -359,11 +363,11 @@ body.wd-page #header {
 }
 
 body.wd-page #header.header-scrolled {
-  background: rgba(7, 13, 24, 0.9);
+  background: rgba(7, 13, 24, 0.97);
 }
 
 body.wd-page #header .nav-menu a {
-  color: rgba(224, 240, 255, 0.88);
+  color: #ffffff;
 }
 
 body.wd-page #header .nav-menu a:hover,
@@ -382,7 +386,7 @@ body.wd-page .mobile-nav {
 }
 
 body.wd-page .mobile-nav a {
-  color: rgba(224, 240, 255, 0.88);
+  color: #ffffff;
 }
 
 body.wd-page .mobile-nav a:hover {
