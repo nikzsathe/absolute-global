@@ -11,8 +11,8 @@ const vertexShader = /* glsl */ `
   void main() {
     // each vertex belongs to one baked simulation frame; show only the
     // currently active frame (points of other frames exit the clip volume)
-    float active = 1.0 - step(0.5, abs(aFrame - uFrame));
-    vec3 pos = position * active + vec3(999.0) * (1.0 - active);
+    float frameVisible = 1.0 - step(0.5, abs(aFrame - uFrame));
+    vec3 pos = position * frameVisible + vec3(999.0) * (1.0 - frameVisible);
     vColor = color;
     vec4 mv = modelViewMatrix * vec4(pos, 1.0);
     gl_Position = projectionMatrix * mv;
